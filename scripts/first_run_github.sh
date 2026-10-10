@@ -13,8 +13,8 @@ gh auth status >/dev/null || { echo 'Run: gh auth login' >&2; exit 1; }
 
 # An explicit authenticated repository check: fail rather than writing to a guessed repo.
 DEFAULT_BRANCH="$(gh repo view "$REPO" --json defaultBranchRef --jq '.defaultBranchRef.name // ""')"
-if [[ "$DEFAULT_BRANCH" != 'main' ]]; then
-  echo "Expected default branch main; found: ${DEFAULT_BRANCH:-<none>}. Adjust workflows/default branch first." >&2
+if [[ "$DEFAULT_BRANCH" != 'master' ]]; then
+  echo "Expected default branch master; found: ${DEFAULT_BRANCH:-<none>}. Adjust workflows/default branch first." >&2
   exit 1
 fi
 
