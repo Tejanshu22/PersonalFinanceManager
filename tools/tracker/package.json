@@ -1,0 +1,8 @@
+{
+  "name": "finnest-progress-renderer",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Renders the version-controlled GitHub Issue tracker CSVs into an XLSX workbook",
+  "scripts": {"build": "node build_xlsx.js"},
+  "dependencies": {"exceljs": "4.4.0"}
+}

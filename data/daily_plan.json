@@ -1,0 +1,767 @@
+[
+  {
+    "id": "DAY-001",
+    "day": 1,
+    "week": 1,
+    "phase": "Research and requirements",
+    "task": "Freeze V1 scope, personas and measurable success criteria",
+    "acceptance": "Reviewed work artifact or documented validation evidence",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "DAY-002",
+    "day": 2,
+    "week": 1,
+    "phase": "Research and requirements",
+    "task": "Interview five salaried prospective users and summarize buying pain",
+    "acceptance": "Reviewed work artifact or documented validation evidence",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "DAY-003",
+    "day": 3,
+    "week": 1,
+    "phase": "Research and requirements",
+    "task": "Interview five more prospects and two CAs; identify reviewer",
+    "acceptance": "Reviewed work artifact or documented validation evidence",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "DAY-004",
+    "day": 4,
+    "week": 1,
+    "phase": "Research and requirements",
+    "task": "Analyze competitors, pricing, compliance risks and name conflicts",
+    "acceptance": "Reviewed work artifact or documented validation evidence",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "DAY-005",
+    "day": 5,
+    "week": 1,
+    "phase": "Research and requirements",
+    "task": "Create user journeys, wireframes, landing page and waitlist",
+    "acceptance": "Reviewed work artifact or documented validation evidence",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "DAY-006",
+    "day": 6,
+    "week": 2,
+    "phase": "Architecture and secure foundations",
+    "task": "Scaffold Next.js, FastAPI, PostgreSQL, CI and local staging",
+    "acceptance": "Reviewed work artifact or documented validation evidence",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "DAY-007",
+    "day": 7,
+    "week": 2,
+    "phase": "Architecture and secure foundations",
+    "task": "Design canonical ledger, ownership, Decimal amounts and migrations",
+    "acceptance": "Reviewed work artifact or documented validation evidence",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "DAY-008",
+    "day": 8,
+    "week": 2,
+    "phase": "Architecture and secure foundations",
+    "task": "Implement secure authentication and session recovery",
+    "acceptance": "Reviewed work artifact or documented validation evidence",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "DAY-009",
+    "day": 9,
+    "week": 2,
+    "phase": "Architecture and secure foundations",
+    "task": "Build private file uploads, scanning and async job infrastructure",
+    "acceptance": "Reviewed work artifact or documented validation evidence",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "DAY-010",
+    "day": 10,
+    "week": 2,
+    "phase": "Architecture and secure foundations",
+    "task": "Implement audit events, monitoring, environment isolation and threat model",
+    "acceptance": "Reviewed work artifact or documented validation evidence",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "DAY-011",
+    "day": 11,
+    "week": 3,
+    "phase": "First CSV importer",
+    "task": "Canonical transaction/account/source data contract",
+    "acceptance": "Reviewed work artifact or documented validation evidence",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "DAY-012",
+    "day": 12,
+    "week": 3,
+    "phase": "First CSV importer",
+    "task": "CSV upload with flexible column matching",
+    "acceptance": "Reviewed work artifact or documented validation evidence",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "DAY-013",
+    "day": 13,
+    "week": 3,
+    "phase": "First CSV importer",
+    "task": "Normalize dates, amounts and narration safely",
+    "acceptance": "Reviewed work artifact or documented validation evidence",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "DAY-014",
+    "day": 14,
+    "week": 3,
+    "phase": "First CSV importer",
+    "task": "Async import workflow with row-level error recovery",
+    "acceptance": "Reviewed work artifact or documented validation evidence",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "DAY-015",
+    "day": 15,
+    "week": 3,
+    "phase": "First CSV importer",
+    "task": "Import preview and user approve/reject experience",
+    "acceptance": "Reviewed work artifact or documented validation evidence",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "DAY-016",
+    "day": 16,
+    "week": 4,
+    "phase": "Categorization and correctness",
+    "task": "Deduplication and idempotent transaction imports",
+    "acceptance": "Reviewed work artifact or documented validation evidence",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "DAY-017",
+    "day": 17,
+    "week": 4,
+    "phase": "Categorization and correctness",
+    "task": "Merchant normalization and classification rules",
+    "acceptance": "Reviewed work artifact or documented validation evidence",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "DAY-018",
+    "day": 18,
+    "week": 4,
+    "phase": "Categorization and correctness",
+    "task": "Own-account transfer, refunds, reversals and card payment logic",
+    "acceptance": "Reviewed work artifact or documented validation evidence",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "DAY-019",
+    "day": 19,
+    "week": 4,
+    "phase": "Categorization and correctness",
+    "task": "Corrections, edit history, scoped user-defined rules",
+    "acceptance": "Reviewed work artifact or documented validation evidence",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "DAY-020",
+    "day": 20,
+    "week": 4,
+    "phase": "Categorization and correctness",
+    "task": "Golden fixtures and accounting edge-case tests",
+    "acceptance": "Reviewed work artifact or documented validation evidence",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "DAY-021",
+    "day": 21,
+    "week": 5,
+    "phase": "PDF and card statements",
+    "task": "PDF framework, parser isolation, file limits and ephemeral passwords",
+    "acceptance": "Reviewed work artifact or documented validation evidence",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "DAY-022",
+    "day": 22,
+    "week": 5,
+    "phase": "PDF and card statements",
+    "task": "Bank-specific PDF parser #1 with tests",
+    "acceptance": "Reviewed work artifact or documented validation evidence",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "DAY-023",
+    "day": 23,
+    "week": 5,
+    "phase": "PDF and card statements",
+    "task": "Format variants and regression tests for first bank parser",
+    "acceptance": "Reviewed work artifact or documented validation evidence",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "DAY-024",
+    "day": 24,
+    "week": 5,
+    "phase": "PDF and card statements",
+    "task": "Credit-card statement adapter with purchase/payment/refund logic",
+    "acceptance": "Reviewed work artifact or documented validation evidence",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "DAY-025",
+    "day": 25,
+    "week": 5,
+    "phase": "PDF and card statements",
+    "task": "Extraction preview and reconciliation warnings",
+    "acceptance": "Reviewed work artifact or documented validation evidence",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "DAY-026",
+    "day": 26,
+    "week": 6,
+    "phase": "Data pipeline hardening",
+    "task": "Bank-specific PDF parser #2",
+    "acceptance": "Reviewed work artifact or documented validation evidence",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "DAY-027",
+    "day": 27,
+    "week": 6,
+    "phase": "Data pipeline hardening",
+    "task": "Unsupported-format handling and manual fallback UX",
+    "acceptance": "Reviewed work artifact or documented validation evidence",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "DAY-028",
+    "day": 28,
+    "week": 6,
+    "phase": "Data pipeline hardening",
+    "task": "Overlapping statement periods and reconciliation rules",
+    "acceptance": "Reviewed work artifact or documented validation evidence",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "DAY-029",
+    "day": 29,
+    "week": 6,
+    "phase": "Data pipeline hardening",
+    "task": "Job retry, failure analytics and duplicate protection",
+    "acceptance": "Reviewed work artifact or documented validation evidence",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "DAY-030",
+    "day": 30,
+    "week": 6,
+    "phase": "Data pipeline hardening",
+    "task": "Alpha test on anonymized fixtures; fix blocking parser bugs",
+    "acceptance": "Reviewed work artifact or documented validation evidence",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "DAY-031",
+    "day": 31,
+    "week": 7,
+    "phase": "Financial dashboard",
+    "task": "Specify and implement income, spending and investment metrics",
+    "acceptance": "Reviewed work artifact or documented validation evidence",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "DAY-032",
+    "day": 32,
+    "week": 7,
+    "phase": "Financial dashboard",
+    "task": "Category/merchant trends and reliable aggregation APIs",
+    "acceptance": "Reviewed work artifact or documented validation evidence",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "DAY-033",
+    "day": 33,
+    "week": 7,
+    "phase": "Financial dashboard",
+    "task": "Build responsive dashboard with live imported data",
+    "acceptance": "Reviewed work artifact or documented validation evidence",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "DAY-034",
+    "day": 34,
+    "week": 7,
+    "phase": "Financial dashboard",
+    "task": "Last-import timestamps, partial coverage labels and drill-down",
+    "acceptance": "Reviewed work artifact or documented validation evidence",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "DAY-035",
+    "day": 35,
+    "week": 7,
+    "phase": "Financial dashboard",
+    "task": "Validate totals against independent calculations",
+    "acceptance": "Reviewed work artifact or documented validation evidence",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "DAY-036",
+    "day": 36,
+    "week": 8,
+    "phase": "Recurring intelligence",
+    "task": "Recurring-charge detection heuristics",
+    "acceptance": "Reviewed work artifact or documented validation evidence",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "DAY-037",
+    "day": 37,
+    "week": 8,
+    "phase": "Recurring intelligence",
+    "task": "Subscription and commitments dashboard",
+    "acceptance": "Reviewed work artifact or documented validation evidence",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "DAY-038",
+    "day": 38,
+    "week": 8,
+    "phase": "Recurring intelligence",
+    "task": "Duplicate and unusual-spend alert candidates",
+    "acceptance": "Reviewed work artifact or documented validation evidence",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "DAY-039",
+    "day": 39,
+    "week": 8,
+    "phase": "Recurring intelligence",
+    "task": "Monthly report builder with supporting details",
+    "acceptance": "Reviewed work artifact or documented validation evidence",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "DAY-040",
+    "day": 40,
+    "week": 8,
+    "phase": "Recurring intelligence",
+    "task": "Health metric components with coverage restrictions",
+    "acceptance": "Reviewed work artifact or documented validation evidence",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "DAY-041",
+    "day": 41,
+    "week": 9,
+    "phase": "AI money assistant",
+    "task": "Allowlisted AI financial tool interface with no arbitrary SQL",
+    "acceptance": "Reviewed work artifact or documented validation evidence",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "DAY-042",
+    "day": 42,
+    "week": 9,
+    "phase": "AI money assistant",
+    "task": "Question routing and deterministic tool results",
+    "acceptance": "Reviewed work artifact or documented validation evidence",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "DAY-043",
+    "day": 43,
+    "week": 9,
+    "phase": "AI money assistant",
+    "task": "AI chat UI and usage limits",
+    "acceptance": "Reviewed work artifact or documented validation evidence",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "DAY-044",
+    "day": 44,
+    "week": 9,
+    "phase": "AI money assistant",
+    "task": "Source-backed answers, prompt redaction and traceability",
+    "acceptance": "Reviewed work artifact or documented validation evidence",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "DAY-045",
+    "day": 45,
+    "week": 9,
+    "phase": "AI money assistant",
+    "task": "Adversarial and numeric test corpus including prompt injection",
+    "acceptance": "Reviewed work artifact or documented validation evidence",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "DAY-046",
+    "day": 46,
+    "week": 10,
+    "phase": "Tax-document foundation",
+    "task": "Private tax vault and document metadata",
+    "acceptance": "Reviewed work artifact or documented validation evidence",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "DAY-047",
+    "day": 47,
+    "week": 10,
+    "phase": "Tax-document foundation",
+    "task": "Historic FY/AY plus new Tax Year data model",
+    "acceptance": "Reviewed work artifact or documented validation evidence",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "DAY-048",
+    "day": 48,
+    "week": 10,
+    "phase": "Tax-document foundation",
+    "task": "Form 16 upload and reviewed fields",
+    "acceptance": "Reviewed work artifact or documented validation evidence",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "DAY-049",
+    "day": 49,
+    "week": 10,
+    "phase": "Tax-document foundation",
+    "task": "AIS/TIS upload workflow and document tagging",
+    "acceptance": "Reviewed work artifact or documented validation evidence",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "DAY-050",
+    "day": 50,
+    "week": 10,
+    "phase": "Tax-document foundation",
+    "task": "Income-specific tax-readiness and missing-document checks",
+    "acceptance": "Reviewed work artifact or documented validation evidence",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "DAY-051",
+    "day": 51,
+    "week": 11,
+    "phase": "Policy and expert review",
+    "task": "Versioned tax-rule metadata with source/effective date",
+    "acceptance": "Reviewed work artifact or documented validation evidence",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "DAY-052",
+    "day": 52,
+    "week": 11,
+    "phase": "Policy and expert review",
+    "task": "Policy admin entry, review and publish workflow",
+    "acceptance": "Reviewed work artifact or documented validation evidence",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "DAY-053",
+    "day": 53,
+    "week": 11,
+    "phase": "Policy and expert review",
+    "task": "Historic source linking and rule-set applicability",
+    "acceptance": "Reviewed work artifact or documented validation evidence",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "DAY-054",
+    "day": 54,
+    "week": 11,
+    "phase": "Policy and expert review",
+    "task": "Audit, rollback and protected publication process",
+    "acceptance": "Reviewed work artifact or documented validation evidence",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "DAY-055",
+    "day": 55,
+    "week": 11,
+    "phase": "Policy and expert review",
+    "task": "Qualified tax-expert check of supported content and examples",
+    "acceptance": "Reviewed work artifact or documented validation evidence",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "DAY-056",
+    "day": 56,
+    "week": 12,
+    "phase": "CA collaboration",
+    "task": "Generate accountant-ready annual financial package",
+    "acceptance": "Reviewed work artifact or documented validation evidence",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "DAY-057",
+    "day": 57,
+    "week": 12,
+    "phase": "CA collaboration",
+    "task": "Explicit limited-scope consent for CA sharing",
+    "acceptance": "Reviewed work artifact or documented validation evidence",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "DAY-058",
+    "day": 58,
+    "week": 12,
+    "phase": "CA collaboration",
+    "task": "Time-limited invitation and scoped CA access",
+    "acceptance": "Reviewed work artifact or documented validation evidence",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "DAY-059",
+    "day": 59,
+    "week": 12,
+    "phase": "CA collaboration",
+    "task": "Revocation, expiry and access audit tests",
+    "acceptance": "Reviewed work artifact or documented validation evidence",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "DAY-060",
+    "day": 60,
+    "week": 12,
+    "phase": "CA collaboration",
+    "task": "End-to-end beta integration test and feature freeze",
+    "acceptance": "Reviewed work artifact or documented validation evidence",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "DAY-061",
+    "day": 61,
+    "week": 13,
+    "phase": "Billing",
+    "task": "Plan and entitlements model with backend-enforced limits",
+    "acceptance": "Reviewed work artifact or documented validation evidence",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "DAY-062",
+    "day": 62,
+    "week": 13,
+    "phase": "Billing",
+    "task": "Payment checkout and paid-order verification",
+    "acceptance": "Reviewed work artifact or documented validation evidence",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "DAY-063",
+    "day": 63,
+    "week": 13,
+    "phase": "Billing",
+    "task": "Webhook signature checks, replay and idempotency tests",
+    "acceptance": "Reviewed work artifact or documented validation evidence",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "DAY-064",
+    "day": 64,
+    "week": 13,
+    "phase": "Billing",
+    "task": "Refunds, failed payments, receipts and cancellations",
+    "acceptance": "Reviewed work artifact or documented validation evidence",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "DAY-065",
+    "day": 65,
+    "week": 13,
+    "phase": "Billing",
+    "task": "Pricing/upgrade/paywall UX and sandbox billing rehearsal",
+    "acceptance": "Reviewed work artifact or documented validation evidence",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "DAY-066",
+    "day": 66,
+    "week": 14,
+    "phase": "Legal and operational hardening",
+    "task": "Consent and privacy controls in app",
+    "acceptance": "Reviewed work artifact or documented validation evidence",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "DAY-067",
+    "day": 67,
+    "week": 14,
+    "phase": "Legal and operational hardening",
+    "task": "User data exports, deletion requests and retention policies",
+    "acceptance": "Reviewed work artifact or documented validation evidence",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "DAY-068",
+    "day": 68,
+    "week": 14,
+    "phase": "Legal and operational hardening",
+    "task": "Legal review of privacy, terms, cancellation and disclaimers",
+    "acceptance": "Reviewed work artifact or documented validation evidence",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "DAY-069",
+    "day": 69,
+    "week": 14,
+    "phase": "Legal and operational hardening",
+    "task": "Support workflow and incident escalation",
+    "acceptance": "Reviewed work artifact or documented validation evidence",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "DAY-070",
+    "day": 70,
+    "week": 14,
+    "phase": "Legal and operational hardening",
+    "task": "Automated security checks and remediation list",
+    "acceptance": "Reviewed work artifact or documented validation evidence",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "DAY-071",
+    "day": 71,
+    "week": 15,
+    "phase": "Release candidate",
+    "task": "Full integration/E2E regression and authorization tests",
+    "acceptance": "Reviewed work artifact or documented validation evidence",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "DAY-072",
+    "day": 72,
+    "week": 15,
+    "phase": "Release candidate",
+    "task": "Financial correctness and all supported format fixtures",
+    "acceptance": "Reviewed work artifact or documented validation evidence",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "DAY-073",
+    "day": 73,
+    "week": 15,
+    "phase": "Release candidate",
+    "task": "Concurrency/performance and robustness tests",
+    "acceptance": "Reviewed work artifact or documented validation evidence",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "DAY-074",
+    "day": 74,
+    "week": 15,
+    "phase": "Release candidate",
+    "task": "Restore backups and incident recovery rehearsal",
+    "acceptance": "Reviewed work artifact or documented validation evidence",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "DAY-075",
+    "day": 75,
+    "week": 15,
+    "phase": "Release candidate",
+    "task": "Independent security assessment and fix gating",
+    "acceptance": "Reviewed work artifact or documented validation evidence",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "DAY-076",
+    "day": 76,
+    "week": 16,
+    "phase": "Controlled paid beta",
+    "task": "Invite limited consenting users after release gate",
+    "acceptance": "Reviewed work artifact or documented validation evidence",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "DAY-077",
+    "day": 77,
+    "week": 16,
+    "phase": "Controlled paid beta",
+    "task": "Assess import quality, corrections and user comprehension",
+    "acceptance": "Reviewed work artifact or documented validation evidence",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "DAY-078",
+    "day": 78,
+    "week": 16,
+    "phase": "Controlled paid beta",
+    "task": "Test real early payments and refunds in controlled rollout",
+    "acceptance": "Reviewed work artifact or documented validation evidence",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "DAY-079",
+    "day": 79,
+    "week": 16,
+    "phase": "Controlled paid beta",
+    "task": "Interview paid/free beta testers and solve biggest problems",
+    "acceptance": "Reviewed work artifact or documented validation evidence",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "DAY-080",
+    "day": 80,
+    "week": 16,
+    "phase": "Controlled paid beta",
+    "task": "Document support, onboarding and production rollout",
+    "acceptance": "Reviewed work artifact or documented validation evidence",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "DAY-081",
+    "day": 81,
+    "week": 17,
+    "phase": "Public launch",
+    "task": "Fix high-priority testing and feedback findings",
+    "acceptance": "Reviewed work artifact or documented validation evidence",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "DAY-082",
+    "day": 82,
+    "week": 17,
+    "phase": "Public launch",
+    "task": "Final end-to-end, auth, tax-policy and billing regression",
+    "acceptance": "Reviewed work artifact or documented validation evidence",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "DAY-083",
+    "day": 83,
+    "week": 17,
+    "phase": "Public launch",
+    "task": "Verify production alerts, recovery and rollback",
+    "acceptance": "Reviewed work artifact or documented validation evidence",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "DAY-084",
+    "day": 84,
+    "week": 17,
+    "phase": "Public launch",
+    "task": "Full release rehearsal and go/no-go decision",
+    "acceptance": "Reviewed work artifact or documented validation evidence",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "DAY-085",
+    "day": 85,
+    "week": 17,
+    "phase": "Public launch",
+    "task": "Limited public launch if all security and accuracy gates pass",
+    "acceptance": "Reviewed work artifact or documented validation evidence",
+    "owner": "Unassigned"
+  }
+]

@@ -1,0 +1,11 @@
+{
+  "display_name": "FINNest",
+  "tagline": "Understand your money. Stay tax-ready.",
+  "brand_status": "working-name-unverified",
+  "internal_product_id": "personal-finance-platform",
+  "feature_id_prefix": "FIN",
+  "application_package_namespace": "com.example.financeplatform",
+  "domain": null,
+  "legal_entity_name": null,
+  "notes": "Change display_name and tagline when rebranding. Do not rename stable feature IDs, DB IDs, routes or internal_product_id. Validate any final brand legally before launch."
+}

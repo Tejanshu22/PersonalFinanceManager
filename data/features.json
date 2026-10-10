@@ -1,0 +1,1942 @@
+[
+  {
+    "id": "FIN-001",
+    "category": "Discovery & product",
+    "name": "Define persona and measurable problem",
+    "release": "V1",
+    "priority": "P0",
+    "target_day": 1,
+    "acceptance": "Signed-off V1 product brief with exclusions and success metrics",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-002",
+    "category": "Discovery & product",
+    "name": "Customer discovery interviews",
+    "release": "V1",
+    "priority": "P0",
+    "target_day": 1,
+    "acceptance": "At least 10 interviews summarized with evidence and insights",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-003",
+    "category": "Discovery & product",
+    "name": "CA workflow discovery",
+    "release": "V1",
+    "priority": "P0",
+    "target_day": 1,
+    "acceptance": "At least two professional workflow interviews documented",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-004",
+    "category": "Discovery & product",
+    "name": "Competitor and pricing research",
+    "release": "V1",
+    "priority": "P0",
+    "target_day": 1,
+    "acceptance": "Comparison and tested price hypotheses recorded",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-005",
+    "category": "Discovery & product",
+    "name": "Brand configuration and rename policy",
+    "release": "V1",
+    "priority": "P0",
+    "target_day": 1,
+    "acceptance": "Display name comes only from config and rebrand guide exists",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-006",
+    "category": "Discovery & product",
+    "name": "Landing page and waitlist",
+    "release": "V1",
+    "priority": "P0",
+    "target_day": 1,
+    "acceptance": "Privacy-conscious waitlist and signup flow works",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-007",
+    "category": "Discovery & product",
+    "name": "Product acceptance criteria",
+    "release": "V1",
+    "priority": "P0",
+    "target_day": 1,
+    "acceptance": "V1 functions have explicit pass/fail conditions",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-008",
+    "category": "Discovery & product",
+    "name": "Risk register and decision log",
+    "release": "V1",
+    "priority": "P0",
+    "target_day": 1,
+    "acceptance": "Major assumptions and risks have owners and follow-ups",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-009",
+    "category": "Identity & onboarding",
+    "name": "Secure sign-up and login",
+    "release": "V1",
+    "priority": "P0",
+    "target_day": 8,
+    "acceptance": "Signup, login and logout tested end to end",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-010",
+    "category": "Identity & onboarding",
+    "name": "Verified email onboarding",
+    "release": "V1",
+    "priority": "P0",
+    "target_day": 8,
+    "acceptance": "User email verification works",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-011",
+    "category": "Identity & onboarding",
+    "name": "Password reset and session revocation",
+    "release": "V1",
+    "priority": "P0",
+    "target_day": 8,
+    "acceptance": "Reset and revoked sessions cannot access accounts",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-012",
+    "category": "Identity & onboarding",
+    "name": "Financial account profile",
+    "release": "V1",
+    "priority": "P0",
+    "target_day": 8,
+    "acceptance": "User can create and manage owned bank/card account metadata",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-013",
+    "category": "Identity & onboarding",
+    "name": "Income-type onboarding",
+    "release": "V1",
+    "priority": "P0",
+    "target_day": 8,
+    "acceptance": "Salary, freelance, investment and other income types selected",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-014",
+    "category": "Identity & onboarding",
+    "name": "Preferences and reporting timezone",
+    "release": "V1",
+    "priority": "P0",
+    "target_day": 8,
+    "acceptance": "Reporting window and timezone persisted correctly",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-015",
+    "category": "Identity & onboarding",
+    "name": "Sensitive session management",
+    "release": "V1",
+    "priority": "P0",
+    "target_day": 8,
+    "acceptance": "Expired/revoked sessions are rejected server-side",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-016",
+    "category": "Identity & onboarding",
+    "name": "Onboarding tutorial and empty states",
+    "release": "V1",
+    "priority": "P0",
+    "target_day": 8,
+    "acceptance": "No-data users see correct next steps, not fake numbers",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-017",
+    "category": "Import & document ingestion",
+    "name": "CSV import with column mapping",
+    "release": "V1",
+    "priority": "P0",
+    "target_day": 14,
+    "acceptance": "Supported CSV imports with preview and schema checks",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-018",
+    "category": "Import & document ingestion",
+    "name": "Money amount and debit-credit normalization",
+    "release": "V1",
+    "priority": "P0",
+    "target_day": 14,
+    "acceptance": "Negative/positive and debit/credit variants normalized",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-019",
+    "category": "Import & document ingestion",
+    "name": "Date parsing and timezone semantics",
+    "release": "V1",
+    "priority": "P0",
+    "target_day": 14,
+    "acceptance": "Dates parsed consistently with stated date assumptions",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-020",
+    "category": "Import & document ingestion",
+    "name": "Canonical statement model",
+    "release": "V1",
+    "priority": "P0",
+    "target_day": 14,
+    "acceptance": "Each import preserves source, period and ownership",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-021",
+    "category": "Import & document ingestion",
+    "name": "Import queue and progress indicator",
+    "release": "V1",
+    "priority": "P0",
+    "target_day": 14,
+    "acceptance": "Async jobs show pending, success, partial failure and error",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-022",
+    "category": "Import & document ingestion",
+    "name": "File type/size limits",
+    "release": "V1",
+    "priority": "P0",
+    "target_day": 14,
+    "acceptance": "Unsupported or oversized files rejected safely",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-023",
+    "category": "Import & document ingestion",
+    "name": "Secure upload and temporary download URLs",
+    "release": "V1",
+    "priority": "P0",
+    "target_day": 14,
+    "acceptance": "Unauthorized users cannot read uploaded files",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-024",
+    "category": "Import & document ingestion",
+    "name": "Password-protected PDFs handled safely",
+    "release": "V1",
+    "priority": "P0",
+    "target_day": 14,
+    "acceptance": "Password is ephemeral and never logged or stored",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-025",
+    "category": "Import & document ingestion",
+    "name": "PDF parser framework",
+    "release": "V1",
+    "priority": "P0",
+    "target_day": 14,
+    "acceptance": "Bank-specific parser adapters run in isolated workflow",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-026",
+    "category": "Import & document ingestion",
+    "name": "Supported bank PDF parser #1",
+    "release": "V1",
+    "priority": "P0",
+    "target_day": 14,
+    "acceptance": "Confirmed fixture suite passes",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-027",
+    "category": "Import & document ingestion",
+    "name": "Supported bank PDF parser #2",
+    "release": "V1",
+    "priority": "P0",
+    "target_day": 14,
+    "acceptance": "Confirmed fixture suite passes",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-028",
+    "category": "Import & document ingestion",
+    "name": "Supported card statement parser #1",
+    "release": "V1",
+    "priority": "P0",
+    "target_day": 14,
+    "acceptance": "Credit-card purchases, repayments, fees and refunds classified",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-029",
+    "category": "Import & document ingestion",
+    "name": "Manual import preview and confirmation",
+    "release": "V1",
+    "priority": "P0",
+    "target_day": 14,
+    "acceptance": "Imported rows not persisted as final without validation path",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-030",
+    "category": "Import & document ingestion",
+    "name": "Unsupported format guidance",
+    "release": "V1",
+    "priority": "P0",
+    "target_day": 14,
+    "acceptance": "Clear fallbacks and support request available",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-031",
+    "category": "Import & document ingestion",
+    "name": "Partial extraction warnings",
+    "release": "V1",
+    "priority": "P0",
+    "target_day": 14,
+    "acceptance": "Missing pages/rows are surfaced explicitly",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-032",
+    "category": "Import & document ingestion",
+    "name": "Statement reconciliation",
+    "release": "V1",
+    "priority": "P0",
+    "target_day": 14,
+    "acceptance": "Where balances exist, integrity checks flag discrepancies",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-033",
+    "category": "Import & document ingestion",
+    "name": "Re-import and overlap handling",
+    "release": "V1",
+    "priority": "P0",
+    "target_day": 14,
+    "acceptance": "Re-import does not double-count rows",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-034",
+    "category": "Import & document ingestion",
+    "name": "Raw source traceability",
+    "release": "V1",
+    "priority": "P0",
+    "target_day": 14,
+    "acceptance": "Every transaction links to source statement reference",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-035",
+    "category": "Transaction data quality",
+    "name": "Normalized transaction ledger",
+    "release": "V1",
+    "priority": "P0",
+    "target_day": 19,
+    "acceptance": "Decimal amount, account and source metadata stored",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-036",
+    "category": "Transaction data quality",
+    "name": "Deterministic merchant recognition",
+    "release": "V1",
+    "priority": "P0",
+    "target_day": 19,
+    "acceptance": "Merchant rules identify common narrations",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-037",
+    "category": "Transaction data quality",
+    "name": "Rules-first categorization engine",
+    "release": "V1",
+    "priority": "P0",
+    "target_day": 19,
+    "acceptance": "Transparent category decisions for known patterns",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-038",
+    "category": "Transaction data quality",
+    "name": "User transaction editing",
+    "release": "V1",
+    "priority": "P0",
+    "target_day": 19,
+    "acceptance": "Manual edits persist and show audit history",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-039",
+    "category": "Transaction data quality",
+    "name": "User-defined category rules",
+    "release": "V1",
+    "priority": "P0",
+    "target_day": 19,
+    "acceptance": "Repeated merchant fixes become scoped rules",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-040",
+    "category": "Transaction data quality",
+    "name": "Internal transfer candidate matching",
+    "release": "V1",
+    "priority": "P0",
+    "target_day": 19,
+    "acceptance": "Own-account transfers are not counted as income/spend",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-041",
+    "category": "Transaction data quality",
+    "name": "Refund and reversal detection",
+    "release": "V1",
+    "priority": "P0",
+    "target_day": 19,
+    "acceptance": "Refunds reverse appropriate spending without fake income",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-042",
+    "category": "Transaction data quality",
+    "name": "Credit-card repayment treatment",
+    "release": "V1",
+    "priority": "P0",
+    "target_day": 19,
+    "acceptance": "Bank-to-card repayments don't inflate spending",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-043",
+    "category": "Transaction data quality",
+    "name": "Duplicate row identification",
+    "release": "V1",
+    "priority": "P0",
+    "target_day": 19,
+    "acceptance": "Same rows are ignored on overlapping uploads",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-044",
+    "category": "Transaction data quality",
+    "name": "Uncertain classification queue",
+    "release": "V1",
+    "priority": "P0",
+    "target_day": 19,
+    "acceptance": "Low-confidence classifications require user review",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-045",
+    "category": "Transaction data quality",
+    "name": "Transaction classification provenance",
+    "release": "V1",
+    "priority": "P0",
+    "target_day": 19,
+    "acceptance": "Original text and reason/confidence retained",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-046",
+    "category": "Transaction data quality",
+    "name": "Transaction correction undo",
+    "release": "V1",
+    "priority": "P0",
+    "target_day": 19,
+    "acceptance": "User can reverse a mistaken category edit",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-047",
+    "category": "Transaction data quality",
+    "name": "Source totals mismatch handling",
+    "release": "V1",
+    "priority": "P0",
+    "target_day": 19,
+    "acceptance": "Reports show unreconciled data warnings",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-048",
+    "category": "Financial calculations & dashboard",
+    "name": "Income and actual spending rules",
+    "release": "V1",
+    "priority": "P0",
+    "target_day": 33,
+    "acceptance": "Salary, refund, investments and transfer separation validated",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-049",
+    "category": "Financial calculations & dashboard",
+    "name": "Month-by-month cash flow",
+    "release": "V1",
+    "priority": "P0",
+    "target_day": 33,
+    "acceptance": "Correct monthly inflows/outflows shown by account/period",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-050",
+    "category": "Financial calculations & dashboard",
+    "name": "Investment-contribution metric",
+    "release": "V1",
+    "priority": "P0",
+    "target_day": 33,
+    "acceptance": "Investments tracked separately from consumption spending",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-051",
+    "category": "Financial calculations & dashboard",
+    "name": "Category breakdowns",
+    "release": "V1",
+    "priority": "P0",
+    "target_day": 33,
+    "acceptance": "Charts match canonical transactions",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-052",
+    "category": "Financial calculations & dashboard",
+    "name": "Merchant breakdowns",
+    "release": "V1",
+    "priority": "P0",
+    "target_day": 33,
+    "acceptance": "Merchant totals trace back to rows",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-053",
+    "category": "Financial calculations & dashboard",
+    "name": "Cross-account summary",
+    "release": "V1",
+    "priority": "P0",
+    "target_day": 33,
+    "acceptance": "Combined view excludes internal transfer double count",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-054",
+    "category": "Financial calculations & dashboard",
+    "name": "Time-period and account filters",
+    "release": "V1",
+    "priority": "P0",
+    "target_day": 33,
+    "acceptance": "All analytics respect selected filters",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-055",
+    "category": "Financial calculations & dashboard",
+    "name": "Historical comparison",
+    "release": "V1",
+    "priority": "P0",
+    "target_day": 33,
+    "acceptance": "Period-on-period comparison uses comparable coverage",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-056",
+    "category": "Financial calculations & dashboard",
+    "name": "Data coverage/freshness warnings",
+    "release": "V1",
+    "priority": "P0",
+    "target_day": 33,
+    "acceptance": "Last import and missing statement periods shown",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-057",
+    "category": "Financial calculations & dashboard",
+    "name": "Transaction drill-down",
+    "release": "V1",
+    "priority": "P0",
+    "target_day": 33,
+    "acceptance": "Every aggregate opens supporting transactions",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-058",
+    "category": "Financial calculations & dashboard",
+    "name": "Empty/partial-data behavior",
+    "release": "V1",
+    "priority": "P0",
+    "target_day": 33,
+    "acceptance": "Insufficient data does not generate false precision",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-059",
+    "category": "Personal finance insights",
+    "name": "Recurring-charge detector",
+    "release": "V1",
+    "priority": "P0",
+    "target_day": 39,
+    "acceptance": "Repeated merchant-period sequences produce candidates",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-060",
+    "category": "Personal finance insights",
+    "name": "Subscriptions and fixed commitments view",
+    "release": "V1",
+    "priority": "P0",
+    "target_day": 39,
+    "acceptance": "Recurring monthly/annual values displayed",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-061",
+    "category": "Personal finance insights",
+    "name": "Potential duplicate payment alerts",
+    "release": "V1",
+    "priority": "P0",
+    "target_day": 39,
+    "acceptance": "Suspected duplicate charges are clearly labeled as tentative",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-062",
+    "category": "Personal finance insights",
+    "name": "Unusual spending alerts",
+    "release": "V1",
+    "priority": "P0",
+    "target_day": 39,
+    "acceptance": "Outliers are flagged without fraud accusations",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-063",
+    "category": "Personal finance insights",
+    "name": "Recurring price-increase alerts",
+    "release": "V1",
+    "priority": "P0",
+    "target_day": 39,
+    "acceptance": "Meaningful increase compared with prior payments detected",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-064",
+    "category": "Personal finance insights",
+    "name": "Explainable savings metrics",
+    "release": "V1",
+    "priority": "P0",
+    "target_day": 39,
+    "acceptance": "Cash available and invested cash explicitly distinguished",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-065",
+    "category": "Personal finance insights",
+    "name": "Monthly financial summary report",
+    "release": "V1",
+    "priority": "P0",
+    "target_day": 39,
+    "acceptance": "Monthly report produced from audited calculations",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-066",
+    "category": "Personal finance insights",
+    "name": "Coverage-aware health components",
+    "release": "V1",
+    "priority": "P0",
+    "target_day": 39,
+    "acceptance": "Components show evidence and avoid fake overall score",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-067",
+    "category": "Personal finance insights",
+    "name": "Upload reminder and monthly notification preferences",
+    "release": "V1",
+    "priority": "P0",
+    "target_day": 39,
+    "acceptance": "User controls reminder frequency and channel",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-068",
+    "category": "Ask My Money AI",
+    "name": "Approved financial query tools",
+    "release": "V1",
+    "priority": "P0",
+    "target_day": 43,
+    "acceptance": "Model cannot access DB except via allowlisted functions",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-069",
+    "category": "Ask My Money AI",
+    "name": "Safe question-to-tool routing",
+    "release": "V1",
+    "priority": "P0",
+    "target_day": 43,
+    "acceptance": "Spending, income and comparison intents map correctly",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-070",
+    "category": "Ask My Money AI",
+    "name": "Financial chat interface",
+    "release": "V1",
+    "priority": "P0",
+    "target_day": 43,
+    "acceptance": "Users can ask questions with usable failure messages",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-071",
+    "category": "Ask My Money AI",
+    "name": "Source-backed numerical answers",
+    "release": "V1",
+    "priority": "P0",
+    "target_day": 43,
+    "acceptance": "Every number is derived from backend and traceable",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-072",
+    "category": "Ask My Money AI",
+    "name": "Privacy-minimized model prompts",
+    "release": "V1",
+    "priority": "P0",
+    "target_day": 43,
+    "acceptance": "PAN/account numbers and unrelated financial rows withheld",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-073",
+    "category": "Ask My Money AI",
+    "name": "Prompt injection resilience",
+    "release": "V1",
+    "priority": "P0",
+    "target_day": 43,
+    "acceptance": "Untrusted statement texts cannot override system behavior",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-074",
+    "category": "Ask My Money AI",
+    "name": "Ambiguity and missing data responses",
+    "release": "V1",
+    "priority": "P0",
+    "target_day": 43,
+    "acceptance": "AI acknowledges incomplete account coverage",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-075",
+    "category": "Ask My Money AI",
+    "name": "AI usage limits and cost controls",
+    "release": "V1",
+    "priority": "P0",
+    "target_day": 43,
+    "acceptance": "Server enforces quotas and protects expensive endpoints",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-076",
+    "category": "Ask My Money AI",
+    "name": "AI evaluation set",
+    "release": "V1",
+    "priority": "P0",
+    "target_day": 43,
+    "acceptance": "Numerical, redaction and adversarial tests pass",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-077",
+    "category": "Tax readiness and policy",
+    "name": "Private tax-document vault",
+    "release": "V1",
+    "priority": "P0",
+    "target_day": 51,
+    "acceptance": "Documents have user ownership, permissions and tags",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-078",
+    "category": "Tax readiness and policy",
+    "name": "Tax reporting period handling",
+    "release": "V1",
+    "priority": "P0",
+    "target_day": 51,
+    "acceptance": "Supports historic FY/AY and newer Tax Year convention",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-079",
+    "category": "Tax readiness and policy",
+    "name": "Form 16 upload and metadata extraction",
+    "release": "V1",
+    "priority": "P0",
+    "target_day": 51,
+    "acceptance": "Extracted fields are user-reviewable with source refs",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-080",
+    "category": "Tax readiness and policy",
+    "name": "AIS/TIS upload identification",
+    "release": "V1",
+    "priority": "P0",
+    "target_day": 51,
+    "acceptance": "User uploads and tags source files without unofficial scraping",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-081",
+    "category": "Tax readiness and policy",
+    "name": "Tax document checklist",
+    "release": "V1",
+    "priority": "P0",
+    "target_day": 51,
+    "acceptance": "Checklist based on declared applicable income sources",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-082",
+    "category": "Tax readiness and policy",
+    "name": "Tax readiness reasons and gaps",
+    "release": "V1",
+    "priority": "P0",
+    "target_day": 51,
+    "acceptance": "Score/status explain exactly which documents are missing",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-083",
+    "category": "Tax readiness and policy",
+    "name": "Verified official tax sources catalog",
+    "release": "V1",
+    "priority": "P0",
+    "target_day": 51,
+    "acceptance": "Every published change links to authoritative document",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-084",
+    "category": "Tax readiness and policy",
+    "name": "Versioned rule metadata store",
+    "release": "V1",
+    "priority": "P0",
+    "target_day": 51,
+    "acceptance": "Effective dates, publication and verification fields captured",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-085",
+    "category": "Tax readiness and policy",
+    "name": "Rule review and approval workflow",
+    "release": "V1",
+    "priority": "P0",
+    "target_day": 51,
+    "acceptance": "Unapproved rule changes cannot affect user output",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-086",
+    "category": "Tax readiness and policy",
+    "name": "Tax policy change history and rollback",
+    "release": "V1",
+    "priority": "P0",
+    "target_day": 51,
+    "acceptance": "Reviewer actions and older rules remain inspectable",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-087",
+    "category": "Tax readiness and policy",
+    "name": "Source-linked tax knowledge viewer",
+    "release": "V1",
+    "priority": "P0",
+    "target_day": 51,
+    "acceptance": "Users can see applicable sourced changes by period",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-088",
+    "category": "Tax readiness and policy",
+    "name": "Professional reviewer sign-off",
+    "release": "V1",
+    "priority": "P0",
+    "target_day": 51,
+    "acceptance": "Tax content marked verified only after qualified review",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-089",
+    "category": "Tax readiness and policy",
+    "name": "Tax limitations disclosure",
+    "release": "V1",
+    "priority": "P0",
+    "target_day": 51,
+    "acceptance": "Tax estimates and filing not falsely advertised as available",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-090",
+    "category": "CA sharing pilot",
+    "name": "Exportable CA-ready report",
+    "release": "V1",
+    "priority": "P0",
+    "target_day": 57,
+    "acceptance": "Annual summary plus issues/missing documents included",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-091",
+    "category": "CA sharing pilot",
+    "name": "User consent before CA sharing",
+    "release": "V1",
+    "priority": "P0",
+    "target_day": 57,
+    "acceptance": "Explicit selected-document sharing scopes available",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-092",
+    "category": "CA sharing pilot",
+    "name": "Time-limited access invite",
+    "release": "V1",
+    "priority": "P0",
+    "target_day": 57,
+    "acceptance": "Invitation expires and uses secure access process",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-093",
+    "category": "CA sharing pilot",
+    "name": "Revoke access immediately",
+    "release": "V1",
+    "priority": "P0",
+    "target_day": 57,
+    "acceptance": "Revoked professional cannot fetch resources",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-094",
+    "category": "CA sharing pilot",
+    "name": "CA viewer with least privilege",
+    "release": "V1",
+    "priority": "P0",
+    "target_day": 57,
+    "acceptance": "CA sees only authorized package content",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-095",
+    "category": "CA sharing pilot",
+    "name": "Share access audit trail",
+    "release": "V1",
+    "priority": "P0",
+    "target_day": 57,
+    "acceptance": "User can review share and access events",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-096",
+    "category": "CA sharing pilot",
+    "name": "CA identity and invite abuse controls",
+    "release": "V1",
+    "priority": "P0",
+    "target_day": 57,
+    "acceptance": "Invite cannot be used by unintended recipients",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-097",
+    "category": "Billing and monetization",
+    "name": "Entitlement matrix",
+    "release": "V1",
+    "priority": "P0",
+    "target_day": 62,
+    "acceptance": "Free/Plus/Tax Pack permissions enforce server-side",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-098",
+    "category": "Billing and monetization",
+    "name": "Usage-limited free plan",
+    "release": "V1",
+    "priority": "P0",
+    "target_day": 62,
+    "acceptance": "API rejects exceeded free allowances",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-099",
+    "category": "Billing and monetization",
+    "name": "Checkout integration",
+    "release": "V1",
+    "priority": "P0",
+    "target_day": 62,
+    "acceptance": "Paid checkout returns to verified order status",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-100",
+    "category": "Billing and monetization",
+    "name": "Signed payment webhooks",
+    "release": "V1",
+    "priority": "P0",
+    "target_day": 62,
+    "acceptance": "Invalid webhook signatures are rejected",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-101",
+    "category": "Billing and monetization",
+    "name": "Idempotent payment event handling",
+    "release": "V1",
+    "priority": "P0",
+    "target_day": 62,
+    "acceptance": "Duplicate webhooks don't duplicate entitlements",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-102",
+    "category": "Billing and monetization",
+    "name": "Upgrade and downgrade",
+    "release": "V1",
+    "priority": "P0",
+    "target_day": 62,
+    "acceptance": "User can change plan without inconsistent balances",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-103",
+    "category": "Billing and monetization",
+    "name": "Refund and cancel workflow",
+    "release": "V1",
+    "priority": "P0",
+    "target_day": 62,
+    "acceptance": "Refund/cancellation semantics documented and tested",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-104",
+    "category": "Billing and monetization",
+    "name": "Receipts/invoice information",
+    "release": "V1",
+    "priority": "P0",
+    "target_day": 62,
+    "acceptance": "Required payment records accessible",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-105",
+    "category": "Billing and monetization",
+    "name": "Failed payment handling",
+    "release": "V1",
+    "priority": "P0",
+    "target_day": 62,
+    "acceptance": "Incomplete purchase never unlocks paid rights",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-106",
+    "category": "Billing and monetization",
+    "name": "Pricing and paywall UX",
+    "release": "V1",
+    "priority": "P0",
+    "target_day": 62,
+    "acceptance": "Feature pricing understandable before payment",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-107",
+    "category": "Billing and monetization",
+    "name": "Revenue and conversion telemetry",
+    "release": "V1",
+    "priority": "P0",
+    "target_day": 62,
+    "acceptance": "Metrics exclude sensitive user transaction content",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-108",
+    "category": "Security privacy compliance",
+    "name": "Data minimization policy",
+    "release": "V1",
+    "priority": "P1",
+    "target_day": 69,
+    "acceptance": "Financial PII not sent to analytics/logs by default",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-109",
+    "category": "Security privacy compliance",
+    "name": "Encryption in transit and at rest",
+    "release": "V1",
+    "priority": "P1",
+    "target_day": 69,
+    "acceptance": "Managed encryption and TLS configured",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-110",
+    "category": "Security privacy compliance",
+    "name": "Fine-grained authorization",
+    "release": "V1",
+    "priority": "P1",
+    "target_day": 69,
+    "acceptance": "Cross-account and CA scopes verified in API tests",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-111",
+    "category": "Security privacy compliance",
+    "name": "Secrets manager and key rotation approach",
+    "release": "V1",
+    "priority": "P1",
+    "target_day": 69,
+    "acceptance": "Secret values are never committed",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-112",
+    "category": "Security privacy compliance",
+    "name": "Private storage + signed reads",
+    "release": "V1",
+    "priority": "P1",
+    "target_day": 69,
+    "acceptance": "No public bucket or guessable files",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-113",
+    "category": "Security privacy compliance",
+    "name": "Upload malware and content checks",
+    "release": "V1",
+    "priority": "P1",
+    "target_day": 69,
+    "acceptance": "Suspicious files quarantined/rejected",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-114",
+    "category": "Security privacy compliance",
+    "name": "Import processor isolation",
+    "release": "V1",
+    "priority": "P1",
+    "target_day": 69,
+    "acceptance": "Untrusted PDFs cannot execute arbitrary code",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-115",
+    "category": "Security privacy compliance",
+    "name": "Privacy notice and opt-in consent",
+    "release": "V1",
+    "priority": "P1",
+    "target_day": 69,
+    "acceptance": "Data use documented and required consents recorded",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-116",
+    "category": "Security privacy compliance",
+    "name": "Data export function",
+    "release": "V1",
+    "priority": "P1",
+    "target_day": 69,
+    "acceptance": "User can export own data safely",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-117",
+    "category": "Security privacy compliance",
+    "name": "Deletion request function",
+    "release": "V1",
+    "priority": "P1",
+    "target_day": 69,
+    "acceptance": "Data removed or retained according to documented policy",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-118",
+    "category": "Security privacy compliance",
+    "name": "Session/device security",
+    "release": "V1",
+    "priority": "P1",
+    "target_day": 69,
+    "acceptance": "Privileged sessions handled securely",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-119",
+    "category": "Security privacy compliance",
+    "name": "Audit logging and retention",
+    "release": "V1",
+    "priority": "P1",
+    "target_day": 69,
+    "acceptance": "Sensitive operations logged without raw documents",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-120",
+    "category": "Security privacy compliance",
+    "name": "Abuse prevention and throttling",
+    "release": "V1",
+    "priority": "P1",
+    "target_day": 69,
+    "acceptance": "Expensive AI and auth endpoints rate-limited",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-121",
+    "category": "Security privacy compliance",
+    "name": "Security dependency scanning",
+    "release": "V1",
+    "priority": "P1",
+    "target_day": 69,
+    "acceptance": "CI scans dependencies and secrets",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-122",
+    "category": "Security privacy compliance",
+    "name": "Automated backup and restore test",
+    "release": "V1",
+    "priority": "P1",
+    "target_day": 69,
+    "acceptance": "Restore exercise succeeds from backup",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-123",
+    "category": "Security privacy compliance",
+    "name": "Incident response guide and contact",
+    "release": "V1",
+    "priority": "P1",
+    "target_day": 69,
+    "acceptance": "Operational roles and escalation steps documented",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-124",
+    "category": "Security privacy compliance",
+    "name": "Legal/privacy review gate",
+    "release": "V1",
+    "priority": "P1",
+    "target_day": 69,
+    "acceptance": "External professional review before real-data release",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-125",
+    "category": "Security privacy compliance",
+    "name": "External security review gate",
+    "release": "V1",
+    "priority": "P1",
+    "target_day": 69,
+    "acceptance": "No unresolved critical/high issues before launch",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-126",
+    "category": "Security privacy compliance",
+    "name": "Third-party processor register",
+    "release": "V1",
+    "priority": "P1",
+    "target_day": 69,
+    "acceptance": "AI, email, hosting and payment processors documented",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-127",
+    "category": "Infrastructure quality operations",
+    "name": "Modular monolith and DB migrations",
+    "release": "V1",
+    "priority": "P1",
+    "target_day": 74,
+    "acceptance": "APIs and migrations reproducible from clean checkout",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-128",
+    "category": "Infrastructure quality operations",
+    "name": "CI test/lint/typecheck",
+    "release": "V1",
+    "priority": "P1",
+    "target_day": 74,
+    "acceptance": "Every PR blocks on core checks",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-129",
+    "category": "Infrastructure quality operations",
+    "name": "Staging and production separation",
+    "release": "V1",
+    "priority": "P1",
+    "target_day": 74,
+    "acceptance": "No shared sensitive database or secrets",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-130",
+    "category": "Infrastructure quality operations",
+    "name": "Background job reliability",
+    "release": "V1",
+    "priority": "P1",
+    "target_day": 74,
+    "acceptance": "Retries, dead-letter and error visibility working",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-131",
+    "category": "Infrastructure quality operations",
+    "name": "Financial fixture regression suite",
+    "release": "V1",
+    "priority": "P1",
+    "target_day": 74,
+    "acceptance": "Golden expected-output fixtures included",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-132",
+    "category": "Infrastructure quality operations",
+    "name": "Integration tests import-to-dashboard",
+    "release": "V1",
+    "priority": "P1",
+    "target_day": 74,
+    "acceptance": "Test flows run in CI",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-133",
+    "category": "Infrastructure quality operations",
+    "name": "E2E smoke and billing tests",
+    "release": "V1",
+    "priority": "P1",
+    "target_day": 74,
+    "acceptance": "Sandbox flow validated on every release",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-134",
+    "category": "Infrastructure quality operations",
+    "name": "Monitoring and error alerts",
+    "release": "V1",
+    "priority": "P1",
+    "target_day": 74,
+    "acceptance": "Logs and exceptions reach configured owner",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-135",
+    "category": "Infrastructure quality operations",
+    "name": "Observability privacy guards",
+    "release": "V1",
+    "priority": "P1",
+    "target_day": 74,
+    "acceptance": "Logging fields are sanitized and sampled",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-136",
+    "category": "Infrastructure quality operations",
+    "name": "Performance load tests",
+    "release": "V1",
+    "priority": "P1",
+    "target_day": 74,
+    "acceptance": "Upload and query p95 budgets defined and checked",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-137",
+    "category": "Infrastructure quality operations",
+    "name": "Deployment rollback runbook",
+    "release": "V1",
+    "priority": "P1",
+    "target_day": 74,
+    "acceptance": "Rollback and DB migration safety documented",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-138",
+    "category": "Infrastructure quality operations",
+    "name": "Data recovery exercise",
+    "release": "V1",
+    "priority": "P1",
+    "target_day": 74,
+    "acceptance": "Backups restore readable user records",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-139",
+    "category": "Infrastructure quality operations",
+    "name": "Product support ticketing",
+    "release": "V1",
+    "priority": "P1",
+    "target_day": 74,
+    "acceptance": "Report-problem workflow hides customer financial data by default",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-140",
+    "category": "Infrastructure quality operations",
+    "name": "Accessibility and mobile-responsive web",
+    "release": "V1",
+    "priority": "P1",
+    "target_day": 74,
+    "acceptance": "Core flows usable keyboard/mobile",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-141",
+    "category": "Infrastructure quality operations",
+    "name": "Public help/FAQ and known formats list",
+    "release": "V1",
+    "priority": "P1",
+    "target_day": 74,
+    "acceptance": "Users see supported file formats and limitations",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-142",
+    "category": "Infrastructure quality operations",
+    "name": "Release approval checklist",
+    "release": "V1",
+    "priority": "P1",
+    "target_day": 74,
+    "acceptance": "Launch gates tracked and blockers prevent launch",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-143",
+    "category": "Infrastructure quality operations",
+    "name": "Automated GitHub feature tracking",
+    "release": "V1",
+    "priority": "P1",
+    "target_day": 74,
+    "acceptance": "Issues drive checklist CSV/XLSX and progress docs",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-144",
+    "category": "Infrastructure quality operations",
+    "name": "Brand-rename configuration",
+    "release": "V1",
+    "priority": "P1",
+    "target_day": 74,
+    "acceptance": "Display name can change without changing stable IDs",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-145",
+    "category": "Expanded personal finance",
+    "name": "Additional bank adapters",
+    "release": "V1.5",
+    "priority": "P2",
+    "target_day": null,
+    "acceptance": "Most demanded banks tested with customer fixtures",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-146",
+    "category": "Expanded personal finance",
+    "name": "More credit card formats",
+    "release": "V1.5",
+    "priority": "P2",
+    "target_day": null,
+    "acceptance": "Additional supported card parsers with reconciliation",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-147",
+    "category": "Expanded personal finance",
+    "name": "Goals and budgeting",
+    "release": "V1.5",
+    "priority": "P2",
+    "target_day": null,
+    "acceptance": "Optional goals calculated from user-confirmed inputs",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-148",
+    "category": "Expanded personal finance",
+    "name": "Manual asset and liability records",
+    "release": "V1.5",
+    "priority": "P2",
+    "target_day": null,
+    "acceptance": "Cash, deposits and loans captured as manual data",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-149",
+    "category": "Expanded personal finance",
+    "name": "Coverage-aware net-worth summary",
+    "release": "V1.5",
+    "priority": "P2",
+    "target_day": null,
+    "acceptance": "Explicit inclusion/exclusion of manually entered sources",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-150",
+    "category": "Expanded personal finance",
+    "name": "Family household view",
+    "release": "V1.5",
+    "priority": "P2",
+    "target_day": null,
+    "acceptance": "Opt-in shared finances with role boundaries",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-151",
+    "category": "Expanded personal finance",
+    "name": "Notification preference center",
+    "release": "V1.5",
+    "priority": "P2",
+    "target_day": null,
+    "acceptance": "Email/app notification channel controls",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-152",
+    "category": "Expanded personal finance",
+    "name": "Improved merchant classifier",
+    "release": "V1.5",
+    "priority": "P2",
+    "target_day": null,
+    "acceptance": "User-corrected patterns used with privacy controls",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-153",
+    "category": "Expanded personal finance",
+    "name": "Subscription reminder automation",
+    "release": "V1.5",
+    "priority": "P2",
+    "target_day": null,
+    "acceptance": "Reminder schedule based on verified recurring transactions",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-154",
+    "category": "Expanded personal finance",
+    "name": "Localization for Indian languages",
+    "release": "V1.5",
+    "priority": "P2",
+    "target_day": null,
+    "acceptance": "Accessibility-checked translations for selected languages",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-155",
+    "category": "Advanced tax intelligence",
+    "name": "Professionally verified tax calculation engine",
+    "release": "V2",
+    "priority": "P2",
+    "target_day": null,
+    "acceptance": "Tax-year/regime calculation suite independently verified",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-156",
+    "category": "Advanced tax intelligence",
+    "name": "Tax regime comparison",
+    "release": "V2",
+    "priority": "P2",
+    "target_day": null,
+    "acceptance": "Applicable tax regimes compared by verified rules",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-157",
+    "category": "Advanced tax intelligence",
+    "name": "Capital gains statement normalization",
+    "release": "V2",
+    "priority": "P2",
+    "target_day": null,
+    "acceptance": "Supported broker statements normalized with traceability",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-158",
+    "category": "Advanced tax intelligence",
+    "name": "Salary and other income reconciliation",
+    "release": "V2",
+    "priority": "P2",
+    "target_day": null,
+    "acceptance": "User+CA can inspect tax-income classifications",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-159",
+    "category": "Advanced tax intelligence",
+    "name": "Personalized policy relevance engine",
+    "release": "V2",
+    "priority": "P2",
+    "target_day": null,
+    "acceptance": "Rule-change notices filtered to declared circumstances",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-160",
+    "category": "Advanced tax intelligence",
+    "name": "Estimated tax payment/TDS summary",
+    "release": "V2",
+    "priority": "P2",
+    "target_day": null,
+    "acceptance": "Tax payments and deductions shown with verified source data",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-161",
+    "category": "Advanced tax intelligence",
+    "name": "Tax notices and deadline organizer",
+    "release": "V2",
+    "priority": "P2",
+    "target_day": null,
+    "acceptance": "User-supplied notice/reminders organized safely",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-162",
+    "category": "Advanced tax intelligence",
+    "name": "CA reviewer collaboration on tax issues",
+    "release": "V2",
+    "priority": "P2",
+    "target_day": null,
+    "acceptance": "Dedicated query and resolution workflow",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-163",
+    "category": "Advanced tax intelligence",
+    "name": "Historical tax position reproducibility",
+    "release": "V2",
+    "priority": "P2",
+    "target_day": null,
+    "acceptance": "Re-run stored inputs against pinned rules versions",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-164",
+    "category": "CA workspace SaaS",
+    "name": "CA practice signup and verification",
+    "release": "V2",
+    "priority": "P2",
+    "target_day": null,
+    "acceptance": "Professional account verification process designed",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-165",
+    "category": "CA workspace SaaS",
+    "name": "Firm-level staff roles",
+    "release": "V2",
+    "priority": "P2",
+    "target_day": null,
+    "acceptance": "Firm data segregated and permissioned",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-166",
+    "category": "CA workspace SaaS",
+    "name": "Client invitation and intake workflows",
+    "release": "V2",
+    "priority": "P2",
+    "target_day": null,
+    "acceptance": "Client joins with explicit consent",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-167",
+    "category": "CA workspace SaaS",
+    "name": "Document requests and reminders",
+    "release": "V2",
+    "priority": "P2",
+    "target_day": null,
+    "acceptance": "User receives scoped requests and uploads",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-168",
+    "category": "CA workspace SaaS",
+    "name": "Client readiness pipeline",
+    "release": "V2",
+    "priority": "P2",
+    "target_day": null,
+    "acceptance": "Firm can filter missing docs and open issues",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-169",
+    "category": "CA workspace SaaS",
+    "name": "Multi-client secure document dashboard",
+    "release": "V2",
+    "priority": "P2",
+    "target_day": null,
+    "acceptance": "Professional sees only authorized clients",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-170",
+    "category": "CA workspace SaaS",
+    "name": "CA comments and client review tasks",
+    "release": "V2",
+    "priority": "P2",
+    "target_day": null,
+    "acceptance": "Threaded client-specific workflow",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-171",
+    "category": "CA workspace SaaS",
+    "name": "Client tax package assembly",
+    "release": "V2",
+    "priority": "P2",
+    "target_day": null,
+    "acceptance": "Accountant can review/edit package generation",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-172",
+    "category": "CA workspace SaaS",
+    "name": "Activity and compliance audit reports",
+    "release": "V2",
+    "priority": "P2",
+    "target_day": null,
+    "acceptance": "Firm access trails exportable to authorized admins",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-173",
+    "category": "CA workspace SaaS",
+    "name": "Firm subscription tiers",
+    "release": "V2",
+    "priority": "P2",
+    "target_day": null,
+    "acceptance": "Billing and seat/client count handled correctly",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-174",
+    "category": "CA workspace SaaS",
+    "name": "Client relationship revoke/export",
+    "release": "V2",
+    "priority": "P2",
+    "target_day": null,
+    "acceptance": "User retains control and can remove practice access",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-175",
+    "category": "Future regulated integrations",
+    "name": "Account Aggregator integration through eligible regulated arrangements",
+    "release": "V3+",
+    "priority": "P2",
+    "target_day": null,
+    "acceptance": "Consent-based bank feeds only after regulatory review",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-176",
+    "category": "Future regulated integrations",
+    "name": "Direct Income Tax ERI flow",
+    "release": "V3+",
+    "priority": "P2",
+    "target_day": null,
+    "acceptance": "Integration available only with applicable authorized status",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-177",
+    "category": "Future regulated integrations",
+    "name": "Broker API/holdings integration",
+    "release": "V3+",
+    "priority": "P2",
+    "target_day": null,
+    "acceptance": "Approved customer authorization and data sharing",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-178",
+    "category": "Future regulated integrations",
+    "name": "GST/ASP-GSP partner integrations",
+    "release": "V3+",
+    "priority": "P2",
+    "target_day": null,
+    "acceptance": "GST flows use suitable provider and consent",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-179",
+    "category": "Future regulated integrations",
+    "name": "Authorized PAN verification",
+    "release": "V3+",
+    "priority": "P2",
+    "target_day": null,
+    "acceptance": "Provider/legal access confirmed",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-180",
+    "category": "Future regulated integrations",
+    "name": "Automated financial sync scheduling",
+    "release": "V3+",
+    "priority": "P2",
+    "target_day": null,
+    "acceptance": "Only permitted integrations and revocable consent",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-181",
+    "category": "Future regulated integrations",
+    "name": "Personalized investment advice with registered providers",
+    "release": "V3+",
+    "priority": "P2",
+    "target_day": null,
+    "acceptance": "Advice offered only through properly licensed service",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-182",
+    "category": "Future regulated integrations",
+    "name": "Direct tax return submission",
+    "release": "V3+",
+    "priority": "P2",
+    "target_day": null,
+    "acceptance": "Authorized ERI and professional review path",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-183",
+    "category": "Long-term product expansion",
+    "name": "Family financial vault",
+    "release": "Future",
+    "priority": "P2",
+    "target_day": null,
+    "acceptance": "Secure household document sharing and nominee records",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-184",
+    "category": "Long-term product expansion",
+    "name": "Freelancer invoice and expense workflows",
+    "release": "Future",
+    "priority": "P2",
+    "target_day": null,
+    "acceptance": "Separate personal/business money context",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-185",
+    "category": "Long-term product expansion",
+    "name": "Sole proprietor cash flow reports",
+    "release": "Future",
+    "priority": "P2",
+    "target_day": null,
+    "acceptance": "Tax-ready business income and expenses",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-186",
+    "category": "Long-term product expansion",
+    "name": "Business bookkeeping export",
+    "release": "Future",
+    "priority": "P2",
+    "target_day": null,
+    "acceptance": "Accounting software-compatible exports",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-187",
+    "category": "Long-term product expansion",
+    "name": "CA marketplace discovery",
+    "release": "Future",
+    "priority": "P2",
+    "target_day": null,
+    "acceptance": "Ethics and referral compliance reviewed before monetization",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-188",
+    "category": "Long-term product expansion",
+    "name": "Professional financial adviser connections",
+    "release": "Future",
+    "priority": "P2",
+    "target_day": null,
+    "acceptance": "Registered advisers listed with clear role boundaries",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-189",
+    "category": "Long-term product expansion",
+    "name": "Insurance renewal/coverage organizer",
+    "release": "Future",
+    "priority": "P2",
+    "target_day": null,
+    "acceptance": "Reminder and vault, no unlicensed product sale",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-190",
+    "category": "Long-term product expansion",
+    "name": "Loans and debt payoff scenarios",
+    "release": "Future",
+    "priority": "P2",
+    "target_day": null,
+    "acceptance": "Calculators without loan origination initially",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-191",
+    "category": "Long-term product expansion",
+    "name": "International and multicurrency statements",
+    "release": "Future",
+    "priority": "P2",
+    "target_day": null,
+    "acceptance": "Exchange rates and multi-entity rules validated",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-192",
+    "category": "Long-term product expansion",
+    "name": "Native Android and iOS",
+    "release": "Future",
+    "priority": "P2",
+    "target_day": null,
+    "acceptance": "Mobile releases after web retention demonstrates demand",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-193",
+    "category": "Long-term product expansion",
+    "name": "Third-party user-authorized integrations",
+    "release": "Future",
+    "priority": "P2",
+    "target_day": null,
+    "acceptance": "Explicit permissions and revocation",
+    "owner": "Unassigned"
+  },
+  {
+    "id": "FIN-194",
+    "category": "Long-term product expansion",
+    "name": "Financial education library",
+    "release": "Future",
+    "priority": "P2",
+    "target_day": null,
+    "acceptance": "Verified explainers with policy revision history",
+    "owner": "Unassigned"
+  }
+]

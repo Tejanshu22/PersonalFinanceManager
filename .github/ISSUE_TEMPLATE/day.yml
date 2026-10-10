@@ -1,0 +1,20 @@
+name: Daily milestone
+description: Track a day from the 85-day roadmap
+title: '[DAY-XXX] '
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Replace DAY-XXX with the stable ID from `data/daily_plan.json`.
+        A day is complete only after the acceptance artifact is reviewed.
+  - type: textarea
+    id: output
+    attributes:
+      label: Today's expected artifact
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Results and blockers

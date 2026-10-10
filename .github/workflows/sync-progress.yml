@@ -1,0 +1,58 @@
+name: Synchronize project progress
+on:
+  issues:
+    types: [opened, edited, closed, reopened, labeled, unlabeled, deleted]
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'config/brand.json'
+      - 'data/features.json'
+      - 'data/daily_plan.json'
+      - 'scripts/sync_progress.py'
+      - 'tools/tracker/**'
+permissions:
+  contents: write
+  issues: read
+concurrency:
+  group: progress-sync-main
+  cancel-in-progress: false
+jobs:
+  synchronize:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          persist-credentials: true
+      - name: Install Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Download verified status and rebuild generated docs/CSVs
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+        run: python scripts/sync_progress.py
+      - name: Install workbook renderer
+        run: npm install --prefix tools/tracker --no-audit --no-fund --ignore-scripts
+      - name: Rebuild Excel tracker
+        run: node tools/tracker/build_xlsx.js
+      - name: Commit tracking artifacts when changed
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'finnest-progress-bot'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add docs/PROGRESS.md docs/COMPLETION_LOG.md docs/FEATURE_CATALOG.md docs/ROADMAP.md tracking/Feature_Checklist.csv tracking/Daily_Checklist.csv tracking/Project_Checklist.xlsx tracking/status.json
+          if ! git diff --staged --quiet; then
+            git commit -m 'docs: sync verified project progress [skip ci]'
+            git push origin HEAD:main
+          else
+            echo 'No tracker changes to commit'
+          fi

@@ -1,0 +1,32 @@
+name: Feature tracking item
+description: Implement one stable FIN-xxx feature with testable acceptance criteria
+title: '[FIN-XXX] '
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Replace FIN-XXX in the title with the stable ID in `data/features.json`.
+        The tracker reads the issue title and `in-progress`, `blocked`, and `verified` labels.
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      description: Copy from the catalog and expand with specific tests.
+    validations:
+      required: true
+  - type: textarea
+    id: tests
+    attributes:
+      label: Test evidence and PR link
+    validations:
+      required: false
+  - type: checkboxes
+    id: verification
+    attributes:
+      label: Before requesting verification
+      options:
+        - label: PR merged and CI passing
+        - label: Acceptance criteria manually checked
+        - label: Security/privacy impact reviewed
+        - label: Relevant docs updated
