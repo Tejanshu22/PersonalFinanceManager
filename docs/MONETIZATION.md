@@ -48,13 +48,13 @@ Use opaque event IDs and coarse outcomes; no raw financial content or account id
 
 ## Validation questions and experiments
 
-Days 2–3: interview ten genuine prospects across the two individual personas and two CAs, following [the interview guide](DAY_01_KICKOFF.md). Ask about the last real statement/tax-document workflow before showing the concept.
+Days 2–3: interview ten genuine prospects across the two individual personas and two CAs, following [the interview guide](DAY_02_INTERVIEW_GUIDE.md). Ask about the last real statement/tax-document workflow before showing the concept.
 
 - Would the person upload at all? What trust evidence, deletion controls, provider choice or AI opt-out changes that decision?
 - Can they explain a synthetic report's income, spending, transfers, repayments and coverage warning correctly?
 - Does correcting an import feel less burdensome than their current workaround?
 - Which formats can they export, without providing financial documents during discovery?
-- After the value demonstration, would they choose free, ₹999/year Plus, ₹499 Tax Pack, neither or another arrangement? What existing alternative would it replace?
+- After discussing current problems and explaining the proposed value and limitations, would they choose free, ₹999/year Plus, ₹499 Tax Pack, neither or another arrangement? What existing alternative would it replace?
 - Does one reporting-period Tax Pack feel clearer than “per use”? Should Plus include it?
 - Would a CA use the package, and what missing evidence would make it unusable?
 - Would they return next month? What concrete event prompts return without automated reminders?

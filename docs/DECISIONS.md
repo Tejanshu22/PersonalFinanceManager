@@ -89,3 +89,22 @@ Current tracker computes closed + verified, excluding canceled/wontfix; it does 
 Documentation changes must be reviewed before final acceptance. Only repository/documentation/tracker checks can run now; there is no application, financial fixture suite, product lint/type pipeline or completed customer research to validate. Test results are recorded in [DAY_01_KICKOFF](DAY_01_KICKOFF.md). No commit, push, merge, issue closure or verified label is authorized by this draft.
 
 The final reconciliation verifies that the required Day 1 documentation is present and the four deferrals are represented in the source manifest and generated views. It does not resolve open pricing, financial-policy, reviewer, retention or roadmap choices. Final owner acceptance, merged PR/CI evidence under AGENTS.md and explicit authorization to verify/close Issue #1 remain outstanding. Live GitHub reads still time out; local regeneration is based on the preserved cached snapshot. Existing ExcelJS transitive dependency deprecation warnings were observed during the normal renderer dependency install; no dependency upgrade or security-audit result is claimed (T-07).
+
+## DAY-002 research preparation — Issue #10
+
+The owner authorized preparation for five distinct real interviews, approximately 15–20 minutes each, with actual findings to be supplied later. The [guide](DAY_02_INTERVIEW_GUIDE.md), [five participant templates](DAY_02_INTERVIEW_NOTES.md) and [assumption/evidence register](DAY_02_RESEARCH_SUMMARY.md) are prepared instruments, not completed research. The guide replaces Day 1's longer preparatory outline. No source manifest, architecture or feature priority changes are authorized by research preparation.
+
+The working tree was clean on master at the start of this task. The local generated roadmap now displays DAY-001 as Verified Done and DAY-002 as Planned; the historical Day 1 evidence text above describes its earlier snapshot. No conclusion about Day 2 interview completion follows from that display. A read-only request for Issue #10 timed out, so the latest remote body/labels and any additional acceptance instructions remain unconfirmed. No issue or label was changed, including in-progress.
+
+Research references below are local decision notes, not new FIN/DAY IDs or GitHub issues. All remain pending unless explicitly stated; no customer evidence has resolved them.
+
+| Ref | Arrangement or decision needed | Owner / when | Preparation default or boundary |
+| --- | --- | --- | --- |
+| D2-01 | Identify interviewer/recruiter, five distinct willing participants and session times | Product owner; before interviews | Seek relevant responsibilities, varied workarounds and skeptics; no actual people or recruitment assumed |
+| D2-02 | Choose private research storage, access, retention/deletion period and withdrawal channel | Product owner; before collecting notes | No identifying records in Git; participant codes alone do not prove anonymity; do not collect notes while these arrangements are unspecified |
+| D2-03 | Agree permission wording for notes, repository excerpts, quotations and assistant analysis | Product owner; before respective uses | Separate participation from sharing/AI permission; recordings off by default; no raw recordings/transcripts in repository |
+| D2-04 | Decide whether any recruitment incentive is needed | Product owner; only if proposed | None assumed; any incentive must not depend on positive product feedback |
+| D2-05 | Review five-interview evidence and summary against DAY-002 acceptance | Product owner; after actual responses | Material coverage, privacy, dissent and evidence traceability matter; positive opinions are not required for completion |
+| D2-06 | Select Day 3 follow-ups based on genuine evidence and sampling gaps | Product owner; after Day 2 notes | Existing plan is five more prospects and two CAs; no new interviews or reviewer appointments invented |
+
+Existing unresolved product decisions O-03/O-08 and trust assumptions can be informed by this research; interviews do not replace O-05 professional review or prove production controls. Findings may recommend feature-priority changes only after real responses and owner review. The 140-item V1 scope and four V1.5 deferrals remain unchanged.

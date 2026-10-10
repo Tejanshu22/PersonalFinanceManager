@@ -44,55 +44,11 @@ The owner has reviewed the draft and authorized reconciliation. These boxes rema
 
 ## Day 2 interview preparation
 
-**Target:** five genuine salaried prospects on Day 2; five additional prospects and two CAs on Day 3, consistent with FIN-002/003. Recruitment and interviews have not occurred. Aim to include both target individual personas across the ten, varied account/card usage and people skeptical of uploads. This is qualitative discovery, not a representative market survey.
+The operative DAY-002 plan is now the [15–20 minute interview guide](DAY_02_INTERVIEW_GUIDE.md), with [five blank P01–P05 templates](DAY_02_INTERVIEW_NOTES.md) and an [assumption/evidence register](DAY_02_RESEARCH_SUMMARY.md). These replace the longer preparatory outline formerly in this section; they do not represent completed interviews.
 
-Use 30–40 minutes per prospect. The product owner recruits and conducts interviews; Astra may help structure anonymized notes but must not substitute invented participants or answers. Anonymized IDs P01–P10 and CA01–CA02 are research references, not product accounts. Store contact details separately from notes with approved access/retention; do not place identifying interview records in Git.
+Day 2 targets five genuine salaried prospects. Day 3 plans five additional prospects and two CAs, consistent with FIN-002/003; five interviews alone do not complete the ten-interview feature criterion. Do not request financial documents or identifying records. Obtain permission for de-identified notes and the actual intended sharing/analysis before recording evidence.
 
-### Before each interview
-
-- Explain that this is research about an unbuilt product, with no promise of tax advice, financial outcomes or launch date.
-- Ask permission for minimal notes; recording is optional and requires separate consent. Allow skipping questions or stopping. Explain how to request removal and disclose any approved retention exceptions.
-- Do not request statements, account numbers, PAN, payslips, passwords, tax documents, salary amounts or client records. No collection of real customer financial documents before the verified safeguards gate.
-- Use clearly labeled synthetic report examples only. Do not imply a static example was produced by working software.
-- Ask provider/format names only if the participant is comfortable; no document upload. Fixture sourcing later requires permission, safe handling and irreversible anonymization review.
-
-### Suggested conversation
-
-1. **Past behavior (8 minutes):** “Tell me about the last time you reviewed spending or gathered documents for a CA.” What tools, steps, difficulties and repeated work were involved? Avoid asking whether the proposed product is “a good idea.”
-2. **Current trust and refusal (6 minutes):** “What would stop you uploading a statement to a new service?” Ask about deletion, sharing, AI, security evidence and acceptable alternatives. Record a refusal as useful evidence.
-3. **Synthetic value exercise (8 minutes):** Show a labeled example containing a card purchase, repayment, own-account transfer and missing statement period. Ask the participant to explain spending, cash flow and the warning. Observe confusion without coaching, then explain.
-4. **Workflow burden (5 minutes):** Ask how they obtain CSV/PDF files, whether monthly uploading and correction are acceptable, and what their current workaround does better.
-5. **Pricing tradeoff (5 minutes):** Only after value/limits are clear, present free, ₹999/year Plus, ₹499 Tax Pack and “neither.” Ask what they would choose, what they would give up, and whether a reporting-period pack or inclusion with Plus is clearer. No purchase or commitment required.
-6. **Return and next step (3 minutes):** “What event would bring you back next month?” Ask separately for consent to a future research invitation. Do not treat that consent as upload or marketing consent.
-
-For CA interviews, focus on required document coverage, period labels, source traceability, missing-information questions, access/revocation expectations and whether the synthetic package supports a real review task. Do not solicit client documents. Discuss professional-review availability separately from product endorsement.
-
-### Evidence template (empty until genuine research)
-
-| Field | Record |
-| --- | --- |
-| Participant ID / date / segment | Non-identifying ID and declared segment |
-| Research consent / withdrawal channel | Approved notice and scope; no contact details in repository |
-| Recent workflow and tools | Participant report; distinguish observation from recollection |
-| Pain and workaround | Concrete example without sensitive financial content |
-| Upload willingness / refusal | Conditions, objections and any changed answer after explanation |
-| Synthetic exercise | Task attempted, observed understanding/errors, help required |
-| Pricing response | Choice including neither, rationale and alternative; hypothetical only |
-| Return/use hypothesis | Stated trigger; not measured retention |
-| Evidence type | Observation / participant claim / facilitator inference |
-| Follow-up and uncertainty | Contradictions, missing evidence and next question |
-
-No rows are prefilled with invented findings. Record denominator and number of interviews actually completed; missing participants stay missing. Summarize disconfirming evidence and differences between personas before proposing changes.
-
-### Day 2 readiness checklist
-
-- [ ] Five actual prospects recruited with voluntary participation.
-- [ ] Research notice, minimal-note storage/access and retention/withdrawal process agreed.
-- [ ] Synthetic examples prepared and clearly labeled; no customer uploads.
-- [ ] Interviewer, schedule, script and unfilled evidence template ready.
-- [ ] Day 3 recruitment for five more prospects and two CAs begun.
-- [ ] Reviewer availability/budget questions prepared without claiming appointments.
-- [ ] Owner agrees how findings will inform format selection, packaging and scope.
+Recruitment, consent/storage/retention arrangements and genuine responses remain prerequisites for research completion. The Day 2 guide lists open arrangements and acceptance gates. No findings, participant quotes or completion status are supplied by these blank materials.
 
 ## Initial draft validation record (before source reconciliation)
 

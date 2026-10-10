@@ -23,7 +23,7 @@ No customer interviews or willingness-to-pay evidence have been collected in thi
 | Payment hypothesis | Plus at ₹999/year if recurring clarity exceeds upload effort; seasonal Tax Pack at ₹499 | May value Plus and Tax Pack; no demonstrated higher willingness to pay | Future subscription only if workflow time savings and trust are demonstrated; no price chosen |
 | Usage hypothesis | Monthly after statements, occasional charge review, seasonal tax preparation | Monthly or more often when reconciling receipts; seasonal CA preparation | Seasonal and repeated during active client work; future weekly/daily use unvalidated |
 
-Validate actual past behavior, upload refusal conditions, comprehension and price tradeoffs through the [Day 2 interview plan](DAY_01_KICKOFF.md). Dedicated freelancers, businesses, nonresident/complex cross-border tax cases and full CA practice management are outside the initial product promise.
+Validate actual past behavior, upload refusal conditions, comprehension and price tradeoffs through the [Day 2 interview plan](DAY_02_INTERVIEW_GUIDE.md). Dedicated freelancers, businesses, nonresident/complex cross-border tax cases and full CA practice management are outside the initial product promise.
 
 ## Release disposition of every catalog feature
 
