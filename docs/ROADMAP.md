@@ -8,7 +8,7 @@
 
 | Done | Day | Task | Status | Issue |
 | --- | --- | --- | --- | --- |
-| ☐ | 1 | Freeze V1 scope, personas and measurable success criteria | Planned | — |
+| ☐ | 1 | Freeze V1 scope, personas and measurable success criteria | Planned | [GitHub](https://github.com/Tejanshu22/PersonalFinanceManager/issues/1) |
 | ☐ | 2 | Interview five salaried prospective users and summarize buying pain | Planned | — |
 | ☐ | 3 | Interview five more prospects and two CAs; identify reviewer | Planned | — |
 | ☐ | 4 | Analyze competitors, pricing, compliance risks and name conflicts | Planned | — |

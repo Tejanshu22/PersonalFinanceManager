@@ -1,8 +1,8 @@
 ﻿Done,ID,Release,Category,Feature,Priority,Target Day,Status,Acceptance,Owner,GitHub Issue
-☐,FIN-001,V1,Discovery & product,Define persona and measurable problem,P0,1,Planned,Signed-off V1 product brief with exclusions and success metrics,Unassigned,
-☐,FIN-002,V1,Discovery & product,Customer discovery interviews,P0,1,Planned,At least 10 interviews summarized with evidence and insights,Unassigned,
-☐,FIN-003,V1,Discovery & product,CA workflow discovery,P0,1,Planned,At least two professional workflow interviews documented,Unassigned,
-☐,FIN-004,V1,Discovery & product,Competitor and pricing research,P0,1,Planned,Comparison and tested price hypotheses recorded,Unassigned,
+☐,FIN-001,V1,Discovery & product,Define persona and measurable problem,P0,1,Planned,Signed-off V1 product brief with exclusions and success metrics,Unassigned,https://github.com/Tejanshu22/PersonalFinanceManager/issues/2
+☐,FIN-002,V1,Discovery & product,Customer discovery interviews,P0,1,Planned,At least 10 interviews summarized with evidence and insights,Unassigned,https://github.com/Tejanshu22/PersonalFinanceManager/issues/3
+☐,FIN-003,V1,Discovery & product,CA workflow discovery,P0,1,Planned,At least two professional workflow interviews documented,Unassigned,https://github.com/Tejanshu22/PersonalFinanceManager/issues/4
+☐,FIN-004,V1,Discovery & product,Competitor and pricing research,P0,1,Planned,Comparison and tested price hypotheses recorded,Unassigned,https://github.com/Tejanshu22/PersonalFinanceManager/issues/5
 ☐,FIN-005,V1,Discovery & product,Brand configuration and rename policy,P0,1,Planned,Display name comes only from config and rebrand guide exists,Unassigned,
 ☐,FIN-006,V1,Discovery & product,Landing page and waitlist,P0,1,Planned,Privacy-conscious waitlist and signup flow works,Unassigned,
 ☐,FIN-007,V1,Discovery & product,Product acceptance criteria,P0,1,Planned,V1 functions have explicit pass/fail conditions,Unassigned,
