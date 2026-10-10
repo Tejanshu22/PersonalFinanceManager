@@ -4,4 +4,4 @@
 
 | ID | Work item | Verified/closed UTC | Issue |
 | --- | --- | --- | --- |
-| — | No verified completions yet | — | — |
+| DAY-001 | Freeze V1 scope, personas and measurable success criteria | 2026-10-10T09:59:15Z | [View](https://github.com/Tejanshu22/PersonalFinanceManager/issues/1) |
