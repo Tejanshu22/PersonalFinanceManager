@@ -2,6 +2,8 @@
 
 The starter ZIP contains root-level project files, not a Git repository and not a nested folder. **Do not force-push** or delete existing work.
 
+This repository already has Git history and working configuration for **master**. These import examples apply only to separately approved archive updates. They are not DAY-001 instructions to replace files, commit or push. Preserve authored manifests, generated-file ownership and existing user changes; compare files before choosing individual updates.
+
 ## Option A: Existing repo has only a README (or just a few files)
 
 From your local clone, assuming the downloaded ZIP is in the parent directory:
@@ -29,8 +31,8 @@ mkdir -p ../FINNest-starter-new
 unzip -o ../PersonalFinanceManager_Starter_Pack.zip -d ../FINNest-starter-new
 # Review which files differ before copying:
 diff -qr . ../FINNest-starter-new || true
-# Intentionally refresh supplied starter files except your custom README:
-rsync -av --exclude='README.md' --exclude='.git/' ../FINNest-starter-new/ ./
+# Preview differences only; copy individual approved files after review:
+rsync -avn --exclude='README.md' --exclude='.git/' ../FINNest-starter-new/ ./
 git diff --check
 git status
 python scripts/validate_manifest.py
@@ -41,14 +43,14 @@ git commit -m "chore: refresh FINNest tracker for PersonalFinanceManager"
 git push origin HEAD
 ```
 
-`rsync` is normally available on macOS/Linux; on Windows, use Git Bash/WSL or copy the extracted files manually and compare your changes. This refresh can overwrite customized non-README files, so always review `git diff` before committing. No command here deletes files or resets Git history.
+`rsync` is normally available on macOS/Linux; on Windows, compare the extracted files manually or use an available shell tool. The `-n` example is a dry run. Copy only individually approved changes; a bulk refresh can overwrite authored manifests, scripts and planning work. Always review `git diff` before a separately authorized commit or push.
 
 ## Final checklist
 
 1. Confirm `.github/workflows/ci.yml` and `.github/workflows/sync-progress.yml` are visible on GitHub. Hidden directories can be missed in website uploads.
-2. Confirm the repo's default branch is `main` or adjust the workflow branch settings.
+2. Preserve `master`; local workflows already target it. Verify the remote default and protection settings before separately approved configuration work.
 3. Enable **Issues** and **Actions**; allow workflow contents write access as appropriate.
 4. Run `bash scripts/first_run_github.sh --dry-run`, then `--apply` only when ready to create your initial issues.
 5. Run Actions → **Synchronize project progress** manually and verify that `docs/PROGRESS.md` updates.
-6. Do not label an issue `verified` until acceptance criteria, tests, and human review are finished.
+6. Do not label an issue `verified` or close it until the merged PR, passing CI, acceptance evidence, updated docs and applicable human/professional reviews satisfy [the completion gate](GITHUB_AUTOMATION.md). DAY-001 requires explicit owner approval.
 7. Never commit real financial records, secrets, PAN numbers, or customer identity documents.

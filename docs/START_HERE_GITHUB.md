@@ -1,15 +1,15 @@
-# FINNest — connect this starter pack to the repository
+# FINNest — existing repository and setup reference
 
 **Target repo:** https://github.com/Tejanshu22/PersonalFinanceManager
 
-This archive contains **root-level files** and is prepared for **the root of this repository**. It deliberately contains no `.git` directory and will not delete existing files. It is not yet pushed or connected. The repository may be empty or private; the preparer has not verified its contents. Preserve any files already there by reviewing conflicts, rather than overwriting blindly. In particular, if you already edited `README.md`, keep your version and copy over only the missing parts.
+This is an existing repository on **master** with tracking sync commits and generated issue links. The current remote settings and CI state still require verification. Preserve existing history and edits. The archive/import instructions below are a reference for separately authorized setup work, not steps to rerun during DAY-001. Do not upload, commit, push, dispatch workflows or change settings as part of the documentation draft.
 
 ## Prerequisites
 
 - Have write access to `Tejanshu22/PersonalFinanceManager`.
 - Prefer the repository to be **private** during development. Do not commit any real bank statements, PAN or Aadhaar details, passwords, access tokens, or unredacted financial data.
 - Recommended: Git, Python 3.12+, Node 22+, GitHub CLI (`gh`).
-- Make sure the default branch is `main`, or adjust `.github/workflows/*.yml` branch settings before enabling actions.
+- Preserve `master`; both local workflows already target it. Verify remote defaults/protection before any separately authorized setup change.
 
 ## Get the files into GitHub
 
@@ -18,7 +18,7 @@ This archive contains **root-level files** and is prepared for **the root of thi
 1. Open https://github.com/Tejanshu22/PersonalFinanceManager and sign in.
 2. Extract `PersonalFinanceManager_Starter_Pack.zip` on your computer.
 3. In the repository, choose **Add file → Upload files**, then drag the extracted files and folders into the repository root. GitHub's website may not accept hidden `.github` items reliably through drag-and-drop or large folder uploads; verify `.github/workflows/sync-progress.yml` and `.github/workflows/ci.yml` appear after uploading. If files are missing, use the Git method below.
-4. Commit to the `main` branch. Inspect the repo tree—`README.md`, `AGENTS.md`, `data/`, `tracking/`, `scripts/`, `.github/` and `docs/` should be at the top level.
+4. When an initial upload is separately authorized, preserve `master` and use the repository's reviewed contribution process. Inspect the repo tree—`README.md`, `AGENTS.md`, `data/`, `tracking/`, `scripts/`, `.github/` and `docs/` should be at the top level.
 
 ### Option B — Git / GitHub CLI (recommended)
 
@@ -54,7 +54,7 @@ The first command prints what would happen. The second creates exact tracking la
 
 4. Run **Actions → Synchronize project progress → Run workflow** (or use `gh workflow run sync-progress.yml -R Tejanshu22/PersonalFinanceManager`).
 5. Confirm a new sync commit appears when there are status changes. Verify `tracking/Project_Checklist.xlsx` and `docs/PROGRESS.md` were regenerated.
-6. After implementing an issue, require tests + review. Apply `verified` **and close the Issue**. Until both happen, its completion checkbox stays unchecked. Reopen it to confirm the checkmark disappears at the next sync.
+6. Require merged PR, passing CI, human acceptance, relevant professional reviews and updated docs before authorized verification/closure. Issue #1 needs explicit owner approval. Test status transitions with synthetic local tests; do not close/reopen real project issues merely to test checkmarks. See [verification details](GITHUB_AUTOMATION.md).
 
 ## Independent local check
 
@@ -73,14 +73,14 @@ python -m unittest discover -s tests -v
 
 ## Start Day 1
 
-Open [DAY_01_KICKOFF.md](DAY_01_KICKOFF.md) and create or use the initial `[DAY-001]` issue. Work from the acceptance criteria rather than simply marking the day finished.
+Open [DAY_01_KICKOFF.md](DAY_01_KICKOFF.md) and use existing [Issue #1](https://github.com/Tejanshu22/PersonalFinanceManager/issues/1) for DAY-001. The documentation draft awaits review; do not create a duplicate issue or mark the day finished.
 
 ## Push carefully into an existing repository
 
-This pack is not a standalone Git repository. Do **not** use `git push --force` or delete your previous work.
+An imported starter archive is not a substitute for this repository's Git history. Do **not** use `git push --force` or delete previous work. Pushes require separate authorization.
 
 - The recommended command `unzip -n` skips existing files, including your edited README; compare skipped files manually if you need the latest version.
 - Run `git status` and `git diff --check` before committing.
 - Ensure the hidden `.github/workflows/` directory was uploaded; GitHub Actions will not start without it.
-- If GitHub displays a workflow-permissions error, review **Settings → Actions → General**. The bot push may be blocked on a protected `main` branch and should be replaced by a pull-request workflow in that case.
+- If GitHub displays a workflow-permissions error, inspect **Settings → Actions → General** and `master` protection. Propose an approved pull-request workflow if needed; do not weaken protection or modify working configuration automatically.
 - Workbook updates happen in GitHub after Actions runs; downloaded `.xlsx` copies on your laptop do not sync automatically.

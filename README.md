@@ -6,7 +6,7 @@
 **Updating an existing repository:** [docs/UPDATE_EXISTING_REPO.md](docs/UPDATE_EXISTING_REPO.md)  
 **Day 1 kickoff:** [docs/DAY_01_KICKOFF.md](docs/DAY_01_KICKOFF.md)
 
-> **Status: planning / starter pack. No product code or real GitHub sync has been deployed.**
+> **Status: planning foundation; no application implementation.** Local history and generated issue links show tracking sync activity. Live GitHub status still requires verification. The [DAY-001 draft](docs/DAY_01_KICKOFF.md) awaits owner acceptance.
 
 **Mission:** Help Indian professionals organize uploaded financial statements, understand cash flow, prepare tax documents, and securely share limited information with a CA. AI explains calculations; it does not invent financial figures.
 
@@ -14,7 +14,7 @@
 
 1. Read [the product requirements](docs/REQUIREMENTS.md) and [the complete feature catalog](docs/FEATURE_CATALOG.md).
 2. Review the [85-day schedule](docs/ROADMAP.md), [current progress](docs/PROGRESS.md), and [tracked CSVs](tracking/). A [verification log](docs/COMPLETION_LOG.md) records reviewed completions.
-3. Follow [GitHub automation setup](docs/GITHUB_AUTOMATION.md) to enable issue-based syncing.
+3. Review [GitHub automation](docs/GITHUB_AUTOMATION.md) for the existing `master` workflow and human verification requirements.
 4. Review the [commercial plan](docs/MONETIZATION.md) and [planned screens](docs/SCREENS.md). Follow [security](docs/SECURITY.md), [tax review](docs/TAX_POLICY.md), and [release gates](docs/RELEASE_CHECKLIST.md) before collecting real data.
 5. Use [AGENTS.md](AGENTS.md) as the repository instructions for Astra.
 
@@ -35,14 +35,17 @@
 
 A checkbox becomes checked (`☑`) only when its corresponding GitHub Issue **is closed** **and has the `verified` label**. Closing without verification displays **Needs Review**. Labels like `in-progress` and `blocked` update status immediately. Never use issue closure or an AI-generated PR alone as proof of completeness.
 
-## Local usage (before GitHub connection)
+## Safe local validation
 
 ```bash
-python scripts/sync_progress.py --no-github
+python scripts/validate_manifest.py
 python -m unittest discover -s tests -v
+git diff --check
 ```
 
-When connected, GitHub Actions regenerates Markdown, CSV, JSON and XLSX and commits the new tracked files. Run `python scripts/bootstrap_issues.py --kind both --limit 12` to preview initial GitHub Issues; add `--apply` and repository credentials to create them. See [setup guide](docs/GITHUB_AUTOMATION.md).
+GitHub Actions is configured to regenerate Markdown, CSV, JSON and XLSX and commit tracked outputs on `master`. Do not run `sync_progress.py --no-github` against this connected tracker: it resets statuses to Planned. Issue creation, workflow dispatch and pushes require separate authorization. See [tracking guide](docs/GITHUB_AUTOMATION.md).
+
+The approved Day 1 scope proposal defers FIN-027, FIN-063, FIN-066 and FIN-067 to V1.5. It proposes 140 V1 items; the unchanged manifest/generated catalog still show 144 until a separately approved reconciliation. Targets are Day 60 internal functional beta, Day 75 security-reviewed release candidate, Days 76–80 gated real-user beta and Day 85 public launch. These are conditional planning targets; [requirements](docs/REQUIREMENTS.md) and [decisions](docs/DECISIONS.md) describe the distinction from the unchanged roadmap.
 
 ## Rebranding
 
@@ -56,12 +59,11 @@ This changes display branding, not immutable feature IDs, database IDs, identity
 
 ## V1 exclusions
 
-**No:** automatic tax filing, AA banking feed, scraping bank/tax credentials, investment advice, GST filing, lending, payments transfer, stock trading or full CA practice management. These are later-phase ideas needing additional regulatory and commercial evaluation.
+**No:** automatic tax filing, AA banking feed, scraping bank/tax credentials, personalized investment recommendations, GST filing, lending, insurance distribution, payments transfer, stock trading or full CA practice management. These are later-phase ideas needing additional regulatory and commercial evaluation.
 
 **Private repo recommended:** keep real bank/tax documents OUT of Git, GitHub Issues, PRs, workflow logs and fixtures; use only synthesized or irreversibly redacted test data.
 
 ## Existing repository precautions
 
-This starter package contains root-level files (including hidden `.github/`) and no Git history.
-Use `unzip -n` when copying into a repository with existing work. Review `git status` before any commit; do **not** force-push.
-The workbook in this repository is an initial snapshot; future updates require enabling the GitHub Actions sync workflow.
+This is an existing Git repository on `master`, with root-level files including hidden `.github/`. Preserve history and user edits. If importing an older starter archive, compare files first; `unzip -n` skips existing files but does not establish that new files are appropriate. Review `git status` before any commit; do **not** force-push.
+The workbook is a generated snapshot, not a live local spreadsheet connection. The sync workflow owns updates; do not edit it by hand. No real customer financial documents may be collected before the required safeguards in [SECURITY](docs/SECURITY.md) are implemented and verified.
