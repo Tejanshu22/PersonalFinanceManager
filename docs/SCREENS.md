@@ -2,7 +2,7 @@
 
 These are proposed V1 user flows, **not implemented screens**. Keep the product web-first and accessible on mobile browsers.
 
-DAY-001 draft: align screen scope with [requirements](REQUIREMENTS.md). FIN-027, FIN-063, FIN-066 and FIN-067 are approved documentation deferrals to V1.5; manifests/generated trackers await separate reconciliation.
+DAY-001 review: screen scope follows [requirements](REQUIREMENTS.md). FIN-027, FIN-063, FIN-066 and FIN-067 are now V1.5 in the reconciled feature manifest and generated catalog. Daily-roadmap adjustments remain separate proposals in [decisions](DECISIONS.md).
 
 | Screen | What users can do | Notes |
 | --- | --- | --- |

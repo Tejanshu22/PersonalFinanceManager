@@ -1,6 +1,6 @@
 # FINNest — product requirements and release boundary
 
-**DAY-001 review draft · 2026-10-10 · [Issue #1](https://github.com/Tejanshu22/PersonalFinanceManager/issues/1).** Requirements below are not implemented or verified. The owner approved the scope amendments and milestone definitions; this document and its proposed acceptance thresholds still require review. See [decisions](DECISIONS.md).
+**DAY-001 review draft · 2026-10-10 · [Issue #1](https://github.com/Tejanshu22/PersonalFinanceManager/issues/1).** Requirements below are not implemented or verified. The owner reviewed the draft and approved the scope amendments, milestone definitions and final feature-manifest reconciliation; remaining decisions and proposed acceptance thresholds still require final acceptance. See [decisions](DECISIONS.md).
 
 ## Product and paying customer
 
@@ -27,7 +27,7 @@ Validate actual past behavior, upload refusal conditions, comprehension and pric
 
 ## Release disposition of every catalog feature
 
-The [manifest](../data/features.json) and [generated catalog](FEATURE_CATALOG.md) still contain **144 V1, 10 V1.5, 20 V2, 8 V3+ and 12 Future items**. The approved four deferrals produce a **proposed 140 V1 / 14 V1.5 split**, pending separately approved manifest reconciliation. No feature is deleted or renumbered.
+The reconciled [manifest](../data/features.json) and regenerated [catalog](FEATURE_CATALOG.md) contain **140 V1, 14 V1.5, 20 V2, 8 V3+ and 12 Future items: 194 total**. FIN-027, FIN-063, FIN-066 and FIN-067 now have release V1.5 and null target_day, as required by the existing schema for later releases. IDs, titles, acceptance criteria, priorities, owners and all other release classifications are preserved. Progress uses the cached issue snapshot described in [the reconciliation record](DAY_01_KICKOFF.md); the unchanged daily roadmap still needs separately approved adjustments.
 
 | IDs | Documentation disposition |
 | --- | --- |

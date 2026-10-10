@@ -45,7 +45,7 @@ git diff --check
 
 GitHub Actions is configured to regenerate Markdown, CSV, JSON and XLSX and commit tracked outputs on `master`. Do not run `sync_progress.py --no-github` against this connected tracker: it resets statuses to Planned. Issue creation, workflow dispatch and pushes require separate authorization. See [tracking guide](docs/GITHUB_AUTOMATION.md).
 
-The approved Day 1 scope proposal defers FIN-027, FIN-063, FIN-066 and FIN-067 to V1.5. It proposes 140 V1 items; the unchanged manifest/generated catalog still show 144 until a separately approved reconciliation. Targets are Day 60 internal functional beta, Day 75 security-reviewed release candidate, Days 76–80 gated real-user beta and Day 85 public launch. These are conditional planning targets; [requirements](docs/REQUIREMENTS.md) and [decisions](docs/DECISIONS.md) describe the distinction from the unchanged roadmap.
+The approved Day 1 scope defers FIN-027, FIN-063, FIN-066 and FIN-067 to V1.5. The reconciled manifest and regenerated catalog now contain 140 V1 and 14 V1.5 items (194 total). Generated progress preserves the existing cached issue snapshot; this is not a fresh GitHub status sync. See the [reconciliation record](docs/DAY_01_KICKOFF.md). Targets are Day 60 internal functional beta, Day 75 security-reviewed release candidate, Days 76–80 gated real-user beta and Day 85 public launch. These are conditional planning targets; [requirements](docs/REQUIREMENTS.md) and [decisions](docs/DECISIONS.md) describe the distinction from the unchanged roadmap.
 
 ## Rebranding
 

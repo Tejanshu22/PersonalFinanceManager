@@ -46,7 +46,6 @@
 | ☐ | FIN-024 | Password-protected PDFs handled safely | Planned | Password is ephemeral and never logged or stored |
 | ☐ | FIN-025 | PDF parser framework | Planned | Bank-specific parser adapters run in isolated workflow |
 | ☐ | FIN-026 | Supported bank PDF parser #1 | Planned | Confirmed fixture suite passes |
-| ☐ | FIN-027 | Supported bank PDF parser #2 | Planned | Confirmed fixture suite passes |
 | ☐ | FIN-028 | Supported card statement parser #1 | Planned | Credit-card purchases, repayments, fees and refunds classified |
 | ☐ | FIN-029 | Manual import preview and confirmation | Planned | Imported rows not persisted as final without validation path |
 | ☐ | FIN-030 | Unsupported format guidance | Planned | Clear fallbacks and support request available |
@@ -54,6 +53,13 @@
 | ☐ | FIN-032 | Statement reconciliation | Planned | Where balances exist, integrity checks flag discrepancies |
 | ☐ | FIN-033 | Re-import and overlap handling | Planned | Re-import does not double-count rows |
 | ☐ | FIN-034 | Raw source traceability | Planned | Every transaction links to source statement reference |
+
+
+## V1.5 — Import & document ingestion
+
+| Check | ID | Feature | Status | Acceptance |
+| --- | --- | --- | --- | --- |
+| ☐ | FIN-027 | Supported bank PDF parser #2 | Planned | Confirmed fixture suite passes |
 
 
 ## V1 — Transaction data quality
@@ -100,9 +106,15 @@
 | ☐ | FIN-060 | Subscriptions and fixed commitments view | Planned | Recurring monthly/annual values displayed |
 | ☐ | FIN-061 | Potential duplicate payment alerts | Planned | Suspected duplicate charges are clearly labeled as tentative |
 | ☐ | FIN-062 | Unusual spending alerts | Planned | Outliers are flagged without fraud accusations |
-| ☐ | FIN-063 | Recurring price-increase alerts | Planned | Meaningful increase compared with prior payments detected |
 | ☐ | FIN-064 | Explainable savings metrics | Planned | Cash available and invested cash explicitly distinguished |
 | ☐ | FIN-065 | Monthly financial summary report | Planned | Monthly report produced from audited calculations |
+
+
+## V1.5 — Personal finance insights
+
+| Check | ID | Feature | Status | Acceptance |
+| --- | --- | --- | --- | --- |
+| ☐ | FIN-063 | Recurring price-increase alerts | Planned | Meaningful increase compared with prior payments detected |
 | ☐ | FIN-066 | Coverage-aware health components | Planned | Components show evidence and avoid fake overall score |
 | ☐ | FIN-067 | Upload reminder and monthly notification preferences | Planned | User controls reminder frequency and channel |
 

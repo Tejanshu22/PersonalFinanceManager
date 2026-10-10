@@ -1,6 +1,6 @@
 # FINNest — GitHub tracking and verification workflow
 
-**DAY-001 documentation review · 2026-10-10.** Working scripts and Actions configuration are unchanged.
+**DAY-001 documentation and source reconciliation · 2026-10-10.** Working scripts and Actions configuration are unchanged.
 
 ## Sources and generated outputs
 
@@ -8,7 +8,7 @@
 
 The [sync workflow](../.github/workflows/sync-progress.yml) responds to issue events, manual dispatch and selected source-file pushes to **master**. It generates [feature CSV](../tracking/Feature_Checklist.csv), [daily CSV](../tracking/Daily_Checklist.csv), [Excel workbook](../tracking/Project_Checklist.xlsx), [progress](PROGRESS.md), [completion log](COMPLETION_LOG.md), [catalog](FEATURE_CATALOG.md), [roadmap](ROADMAP.md) and [status JSON](../tracking/status.json). It commits only its listed generated artifacts to master; it does not approve product work.
 
-Human-owned requirements, architecture, security, tax policy and decision documents need reviewed edits. Do not manually modify generated output or percentages. The Day 1 140-item V1 proposal is intentionally not yet reconciled into the 144-item V1 manifest.
+Human-owned requirements, architecture, security, tax policy and decision documents need reviewed edits. Do not manually modify generated output or percentages. The owner-approved Day 1 reconciliation now records 140 V1 and 14 V1.5 items. The four deferred features have null target_day; priorities and stable IDs are unchanged.
 
 ## Existing repository and branch
 
@@ -66,7 +66,7 @@ git diff --check
 
 The tests generate output inside temporary directories; they must not overwrite tracked artifacts. On Windows, filesystem permissions may require an approved execution context for the temporary-directory test. UTF-8 mode may be needed for Unicode fixtures.
 
-Do not run sync_progress.py with --no-github on the connected working tracker: it intentionally resets generated status to Planned. Isolated demonstrations may use it only outside tracked outputs. Real sync reads GitHub state and writes artifacts; it is not a read-only inspection command. Workbook generation also writes tracked output and is unnecessary for this documentation pass.
+Do not run sync_progress.py with --no-github on the connected working tracker: it intentionally resets generated status to Planned. Isolated demonstrations may use it only outside tracked outputs. Real sync reads GitHub state and writes artifacts; it is not a read-only inspection command. For this approved reconciliation, the existing generator was run locally with --issues-json and the preserved cached timestamp, followed by the unchanged workbook renderer. No workflow was dispatched: the workflow also commits/pushes, which is not authorized. The cached projection was first checked to reproduce all seven pre-change generated text artifacts exactly after newline normalization; it is not a live issue export. See [provenance and limitations](DAY_01_KICKOFF.md).
 
 ## Recorded engineering follow-ups
 

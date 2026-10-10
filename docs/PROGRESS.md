@@ -4,7 +4,7 @@
 
 **Synced:** 2026-10-10 07:12 UTC  
 **Verified features:** 0/194 (0.0%)  
-**V1 verified:** 0/144 (0.0%)  
+**V1 verified:** 0/140 (0.0%)  
 **Verified daily tasks:** 0/85
 
 ## Feature status overview
@@ -22,8 +22,8 @@
 
 | Release | Total | Verified | Progress |
 | --- | --- | --- | --- |
-| V1 | 144 | 0 | 0.0% |
-| V1.5 | 10 | 0 | 0.0% |
+| V1 | 140 | 0 | 0.0% |
+| V1.5 | 14 | 0 | 0.0% |
 | V2 | 20 | 0 | 0.0% |
 | V3+ | 8 | 0 | 0.0% |
 | Future | 12 | 0 | 0.0% |
