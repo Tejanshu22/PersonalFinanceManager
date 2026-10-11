@@ -22,6 +22,12 @@ The base tax-document vault, basic readiness visibility, package export and shar
 
 Proposed trust floor: existing-data viewing/correction, mandatory warnings, privacy controls, consent withdrawal, revocation, deletion and own-data export remain accessible without upgrading. Paid limits control additional processing/capacity, not ownership of uploaded data. Owner approval is pending for the final entitlement matrix.
 
+## Preliminary survey evidence — 2026-10-11
+
+The [pilot report](research/DAY_02_SURVEY_PILOT.md) contains five hypothetical annual-price answers: the three employed respondents chose different bands (one up to ₹499, one ₹500–₹999, one ₹1,000–₹1,999); both students were uncertain until a trial. These are reported choices, not purchases, conversion or a validated ₹999 price. The annual bands do not test the separate ₹499 one-time Tax Pack, entitlement split or renewal behavior. One respondent gave conflicting paid-service selections; their subgroup is unspecified, so no clean nonpayment total is inferred.
+
+All prices and packaging above remain unchanged hypotheses. Interview follow-ups must establish actual past purchases, the job delivered, current alternatives, upload effort and seasonal versus recurring value. See the [evidence register](DAY_02_RESEARCH_SUMMARY.md); no paid pilot, outreach or real-document collection is authorized by this survey integration.
+
 ## Conversion, retention and costs
 
 Hypothesized conversion moments: a user successfully reconciles a first statement then needs more accounts/history; identifies useful recurring commitments; or needs an organized CA package. Test willingness to pay only after explaining import effort, coverage limitations and data handling. Annual Plus can provide recurring revenue only if renewal value exists; a Tax Pack is seasonal transactional revenue. Auto-renewal versus explicit renewal is undecided and must be disclosed before purchase.

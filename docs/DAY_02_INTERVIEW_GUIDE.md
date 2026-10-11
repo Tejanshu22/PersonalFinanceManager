@@ -1,6 +1,6 @@
 # FINNest — DAY-002 customer interview guide
 
-**Task:** [DAY-002 / Issue #10](https://github.com/Tejanshu22/PersonalFinanceManager/issues/10). **Stage:** research preparation; no participant responses supplied. **Session length:** 15–20 minutes. This operational guide supersedes the longer interview outline in [Day 1 preparation](DAY_01_KICKOFF.md).
+**Task:** [DAY-002 / Issue #10](https://github.com/Tejanshu22/PersonalFinanceManager/issues/10). **Stage:** interview preparation; preliminary survey evidence received, but no completed interview notes supplied. **Session length:** 15–20 minutes. This operational guide supersedes the longer interview outline in [Day 1 preparation](DAY_01_KICKOFF.md).
 
 Use the [five participant templates](DAY_02_INTERVIEW_NOTES.md) and [assumption/evidence register](DAY_02_RESEARCH_SUMMARY.md). Product boundaries and prices come from [requirements](REQUIREMENTS.md) and [monetization](MONETIZATION.md); they remain hypotheses where marked. No application, architecture, manifest, generated-tracker or GitHub-state changes are part of this research preparation.
 
@@ -8,7 +8,7 @@ Use the [five participant templates](DAY_02_INTERVIEW_NOTES.md) and [assumption/
 
 Understand whether the target users experience sufficiently important financial-organization problems, how they solve them now, what prevents statement uploads, and what could justify repeat use or payment. Discover reasons **not** to build or prioritize a capability as well as reasons to pursue it. A prepared guide is not an interview; an enthusiastic reaction is not a purchase.
 
-DAY-002 requires five distinct real participants and a reviewed synthesis. FIN-002 requires at least ten interviews across the wider discovery effort; the Day 2 five contribute to that requirement without completing it. Day 3 additionally plans five more prospects and two CAs under the existing roadmap. No research results or completion labels are inferred from the current generated tracker. The local roadmap links DAY-002 to #10; the live read of #10 timed out, so its latest body/labels could not be confirmed.
+The founder-approved [Day 2 acceptance amendment](research/DAY_02_CLOSEOUT.md) replaces the five-interview milestone gate with the five-response exploratory survey. This guide and P01–P05 templates remain for the separate nonblocking interview follow-up. FIN-002 still requires at least ten actual interviews; five future interviews contribute without completing it. Day 3 may proceed, including CA workflow discovery, without waiting for those five sessions. No research completion is inferred from generated tracker status.
 
 ## Recruit five people for relevant experience, not agreement
 
@@ -106,16 +106,22 @@ Ask the participant to choose the most important problem they actually mentioned
 
 After each interview, fill its [template](DAY_02_INTERVIEW_NOTES.md) only with permitted genuine notes, label prompted answers, uncertainty and unanswered questions, and run a privacy review. The user then supplies those de-identified responses for analysis. Do not turn blanks into “no problem,” a refusal into “would pay,” or hypothetical interest into validated demand.
 
-## Completion gate and open arrangements
+## Future interview completion and open arrangements
 
 - Five distinct interviews actually completed and documented with appropriate permission; incomplete interviews are not silently counted.
 - Findings tied to participant evidence; pain, alternatives, trust, pricing, dissent and Day 3 questions summarized and reviewed.
-- Owner accepts DAY-002 research evidence and explicitly approves completion; repository PR/CI/review requirements also apply.
+- Owner reviews the separate interview follow-up against its acceptance; these are not the amended DAY-002 gates. FIN-002 still requires ten actual interviews. Repository PR/CI/review requirements apply to later verification.
 - No verified label or issue closure until those gates pass. No GitHub label change is authorized by merely saying it may be used if authorized.
 
 Before interviewing, confirm recruiter/interviewer, participant availability, note storage/access/retention/withdrawal process and consent for de-identified repository/assistant use. Recruitment mix gaps can be recorded rather than filled with fictional participants. See [Day 2 open decisions](DECISIONS.md) and the [working evidence register](DAY_02_RESEARCH_SUMMARY.md). No interviews are performed by preparing these materials.
 
-## Preparation validation (not research findings)
+## Survey-informed probes — added 2026-10-11
+
+The [pilot report](research/DAY_02_SURVEY_PILOT.md) covers three employed respondents and two students. Use the [outstanding interview questions](DAY_02_RESEARCH_SUMMARY.md#outstanding-interview-questions-and-day-3-follow-ups) as optional probes after an unaided account of current behavior. Do not show survey counts or imply that confusion, upload refusal or willingness to pay is expected. Keep the existing timebox; choose the relevant probe and record unanswered topics.
+
+Clarify a contradictory survey answer only if the participant voluntarily identifies it and permitted private research records establish the connection; never infer identities from aggregate counts. Otherwise ask the same neutral past-payment and recent-incident questions of everyone. No statements, screens, credentials or identifying financial records are needed. Any later visual comparison must use clearly synthetic material, after problem discovery, and must not imply a working or security-reviewed product exists.
+
+## Preparation validation (historical; not research findings)
 
 The following checks were run after preparing these materials:
 
@@ -128,4 +134,4 @@ The following checks were run after preparing these materials:
 | Whitespace | PASS: git diff --check for tracked changes and explicit whitespace inspection of the three new files | New untracked files are checked separately because git diff omits them |
 | Scope preservation | PASS: master, source manifests, architecture, code and generated artifacts unchanged | No approval, verification, push or merge follows from these checks |
 
-No application tests, financial fixtures, customer research or professional review results were invented. Final DAY-002 analysis remains pending genuine participant responses.
+No application tests, financial fixtures, customer research or professional review results were invented. Future interview synthesis remains pending genuine participant responses; the survey-only Day 2 closeout is governed by the approved amendment.

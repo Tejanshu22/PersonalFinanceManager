@@ -10,7 +10,7 @@ The complete value journey is **Upload → Reconcile → Correct → Understand 
 
 ## Personas: hypotheses to validate
 
-No customer interviews or willingness-to-pay evidence have been collected in this repository. Ages and behaviors below describe intended recruitment, not observed market facts.
+No completed customer interviews or observed purchasing validation have been documented in this repository. The [Day 2 survey pilot](research/DAY_02_SURVEY_PILOT.md) supplies preliminary self-reported concerns and hypothetical price choices from three employed respondents and two students; it does not validate demand or redefine these personas. Ages and behaviors below describe intended recruitment, not observed market facts.
 
 | Dimension | Primary: salaried professional | Secondary: salary plus other income | Future B2B: CA or small practice |
 | --- | --- | --- | --- |

@@ -1,8 +1,10 @@
 # FINNest — DAY-002 participant notes
 
-**Task:** [DAY-002 / Issue #10](https://github.com/Tejanshu22/PersonalFinanceManager/issues/10). **Documented usable interviews: 0/5.** Five blank templates follow; none represents an interview or recruited person. Responses are not yet supplied.
+**Task:** [DAY-002 / Issue #10](https://github.com/Tejanshu22/PersonalFinanceManager/issues/10). **Documented usable interviews: 0/5.** Five blank templates follow; none represents an interview or recruited person. Interview responses are not yet supplied. The separate [five-response survey pilot](research/DAY_02_SURVEY_PILOT.md) is aggregate supporting evidence, not P01–P05 interview notes; no survey respondent is mapped to these slots.
 
 Use the [interview guide](DAY_02_INTERVIEW_GUIDE.md). Transfer only genuinely collected, permissioned, privacy-reviewed notes. Keep identities, contacts, recordings and raw transcripts outside the repository; do not request financial documents. P01–P05 alone do not guarantee anonymity. Generalize identifying combinations and costs. If sharing or assistant-analysis permission is absent, do not put the content here or into the chat.
+
+These templates now support the separate nonblocking interview follow-up under the [approved Day 2 acceptance amendment](research/DAY_02_CLOSEOUT.md); their empty state does not block the survey-only milestone. FIN-002 interview acceptance remains unchanged.
 
 ## Common recording rules
 
