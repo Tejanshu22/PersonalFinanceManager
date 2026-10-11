@@ -24,6 +24,8 @@ Until these pass, internal demonstrations and interviews use safe synthetic mate
 
 ## Before Day 75 release-candidate approval target
 
+For tax/CA gates below, use the proposed [period/document scenarios](tax/DOCUMENT_READINESS.md) and [sharing failure cases](research/DAY_03_CA_WORKFLOW.md) as inputs to independent review and implementation testing. These examples have not run and no gate is checked by DAY-003 documentation or a later milestone scope amendment. External review tasks are recorded in the [CA discovery pack](research/DAY_03_CA_DISCOVERY.md).
+
 - [ ] Every advertised bank/card format/version is selected from suitable fixtures and passes extraction/reconciliation tests; unsupported/scanned files fail gracefully.
 - [ ] Independent golden fixtures pass exactly for income, consumption, investments, transfers, card purchases/repayments, refunds/reversals, cash flow and qualified savings.
 - [ ] Re-import/overlap protection preserves legitimate repeated purchases; corrections/undo and provenance are verified.

@@ -58,6 +58,8 @@ The reconciled [manifest](../data/features.json) and regenerated [catalog](FEATU
 
 No direct Account Aggregator synchronization, bank/tax login or OTP scraping, ITR submission, GST filing, personalized stock/mutual-fund purchase or sale recommendations, lending/origination, insurance distribution, money transfer, trading, broker integration, or other regulated capability in V1. No investment valuation/returns engine, advanced tax calculation, full bookkeeping, native mobile app or full CA SaaS. Later entries are evaluation candidates, not commitments or evidence of legal authorization.
 
+The [DAY-003 CA handoff proposal](research/DAY_03_CA_WORKFLOW.md) and [conditional document/readiness matrix](tax/DOCUMENT_READINESS.md) elaborate FIN-077–096 for review without changing manifest acceptance or release classifications. Proposed V1 clarification uses owner-mediated questions through an agreed external channel; native CA messaging/task management is not silently added. Checklist status indicates document gaps, not tax correctness. Workflow usefulness, period/form applicability and professional sign-off remain unvalidated; see [Day 3 decisions](DECISIONS.md).
+
 ## Financial accuracy contract (proposed for review)
 
 All money uses decimal arithmetic and exact database numeric types. Preserve currency, source amount/text/date, statement/page/row reference, parser version, reconciliation results and correction history. Never overwrite raw source values. V1 initially reports INR only; unsupported currencies must be surfaced without conversion or mixed-currency totals. Decimal precision, rounding mode and boundary behavior must be approved and fixture-tested before implementation; no hidden tolerance may make a mismatch disappear.

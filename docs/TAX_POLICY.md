@@ -33,6 +33,8 @@ V1 may use a small protected editorial workflow; governance remains mandatory ev
 
 ## Tax readiness behavior
 
+The [DAY-003 inventory and assessment proposal](tax/DOCUMENT_READINESS.md) supplies conditional document categories, narrow official-source references, per-type extraction limits and fictional expected cases for review. It recommends checklist status rather than a tax-confidence percentage. Official successor-form terminology differences are unresolved: preserve printed labels and periods and do not enable a guessed mapping. Neither this draft nor source browsing constitutes professional sign-off. The [reviewer brief](research/DAY_03_CA_DISCOVERY.md) defines the still-pending appointment and review deliverables.
+
 - Use declared income sources, period and available documents to explain each required, missing, received, user-confirmed or unresolved item.
 - Form 16 metadata is source-linked and user-reviewable. AIS/TIS identification/tagging does not imply complete tax reconciliation.
 - A received file is not proof of correctness, authenticity or sufficient tax disclosure. Unknown/unsupported income circumstances must remain unresolved.

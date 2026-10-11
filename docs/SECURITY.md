@@ -38,6 +38,8 @@ Account deletion must immediately disable sessions, shares and new jobs, then co
 
 ## CA permissions and revocation
 
+The [DAY-003 workflow and sharing permissions matrix](research/DAY_03_CA_WORKFLOW.md) applies these requirements to proposed owner/recipient actions, including selected derived summaries, new package versions and clarification through an agreed external channel. It is a design draft, not evidence of access-control tests. FINNest does not protect an external communication channel; native messaging requires separate scope approval. CA discovery uses no client records and requires the [research consent process](research/DAY_03_CA_DISCOVERY.md).
+
 Sharing requires explicit selection of documents/report snapshot, intended recipient identity, allowed actions (view/download), purpose and expiry. Do not grant all current/future documents or account browsing by default. Re-sharing and adding documents require new authorization; recipient must not widen permissions.
 
 Check active scope on every new fetch through an authorization gateway. Long-lived direct object URLs must not bypass revocation. Test invitation forwarding, replay, changed ownership, cached links, expiry and concurrent revocation. Record access events for the owner.
