@@ -1,0 +1,51 @@
+{
+  "received_date": "2026-10-12",
+  "status": "Founder-supplied design reference; upstream tests are not independent repository validation",
+  "files": [
+    {
+      "file": "reference/ASTRA_DAY5_V4_INTEGRATION_PROMPT.md",
+      "sha256": "eb71589db6d3ab478f5c0c2a2d712d542c8f7529e9e5d1a3aececc37f1d45137",
+      "bytes": 4658
+    },
+    {
+      "file": "reference/FINNest_Interactive_Globe_V4.html",
+      "sha256": "d30b944e862c0eb964b1c142a01d9c1955067d28e0961825b9887dae65888308",
+      "bytes": 91375
+    },
+    {
+      "file": "reference/README.md",
+      "sha256": "9a7cf9228388c62dc599da7d22d3ed6761b14efee1c158abd3f5911d03970677",
+      "bytes": 4262
+    },
+    {
+      "file": "reference/TEST_RESULTS_V4.json",
+      "sha256": "235e1275b17c85d8f7f256fe11c5292ff7bfbdc663d7961ebf3c2df2a143da8e",
+      "bytes": 1553
+    },
+    {
+      "file": "reference/FINNest_V4_Dashboard.png",
+      "sha256": "6f2b920de45e67f7eb42fb3e34724528f40938071ff840cc463f082d8e08762d",
+      "bytes": 98398
+    },
+    {
+      "file": "reference/FINNest_V4_Desktop_Hero.png",
+      "sha256": "2c44d800964731c0f450d0773a568535e4da36e03b5219bccf37214b0a34cb6c",
+      "bytes": 884207
+    },
+    {
+      "file": "reference/FINNest_V4_Location_Desktop.png",
+      "sha256": "cf3919ed38037638bd88974c8bf909979308b626ea02f7bc734b0fe2fefd0ffc",
+      "bytes": 895467
+    },
+    {
+      "file": "reference/FINNest_V4_Mobile_Hero.png",
+      "sha256": "e1c476831ecae48dde13d4a960bd86eff8846d56371f5c8dbe8a66eb845c78e8",
+      "bytes": 272246
+    },
+    {
+      "file": "reference/FINNest_V4_Mobile_Location.png",
+      "sha256": "b46f95dc5df4c6eacba574d52a8d2e3061124a3dc0fe7db0033d42992b3e54d7",
+      "bytes": 279033
+    }
+  ]
+}

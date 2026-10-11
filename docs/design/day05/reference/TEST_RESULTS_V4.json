@@ -1,0 +1,83 @@
+[
+  {
+    "step": "top",
+    "scrollY": 0,
+    "canvasY": 0,
+    "canvasX": 0,
+    "state": {
+      "style": "fixed",
+      "visible": "visible",
+      "opacity": "1"
+    },
+    "scene": "01"
+  },
+  {
+    "step": "scroll-750",
+    "scrollY": 750,
+    "canvasY": 0,
+    "canvasX": 0,
+    "state": {
+      "style": "fixed",
+      "visible": "visible",
+      "opacity": "1"
+    },
+    "scene": "02"
+  },
+  {
+    "step": "scroll-1450",
+    "scrollY": 1450,
+    "canvasY": 0,
+    "canvasX": 0,
+    "state": {
+      "style": "fixed",
+      "visible": "visible",
+      "opacity": "1"
+    },
+    "scene": "03"
+  },
+  {
+    "step": "scroll-2200",
+    "scrollY": 2200,
+    "canvasY": 0,
+    "canvasX": 0,
+    "state": {
+      "style": "fixed",
+      "visible": "visible",
+      "opacity": "1"
+    },
+    "scene": "04"
+  },
+  {
+    "step": "scroll-2750",
+    "scrollY": 2750,
+    "canvasY": 0,
+    "canvasX": 0,
+    "state": {
+      "style": "fixed",
+      "visible": "visible",
+      "opacity": "1"
+    },
+    "scene": "04"
+  },
+  {
+    "location_text": "Approximate area: 25\u00b0 N, 82\u00b0 E. Shown on this globe only.",
+    "button": "\u25ce Focus on my area"
+  },
+  {
+    "desktop_errors": [],
+    "doc_scroll_width": 1440,
+    "viewport_width": 1440
+  },
+  {
+    "denied_location": "Permission declined. The globe works without location."
+  },
+  {
+    "mobile_loc": "Approximate area: 25\u00b0 N, 82\u00b0 E. Shown on this globe only.",
+    "scrollwidth": 390,
+    "innerwidth": 390,
+    "errors": []
+  },
+  {
+    "reduced_motion_autorotate": "false"
+  }
+]

@@ -81,3 +81,11 @@ Day 5 readiness checklist:
 - [ ] Preserve reviewed external-evidence limits, V1 scope and Day 60/85 planning targets.
 
 The materials are sufficient to begin Day 5 design after founder review; public rollout, live data collection and professional/tax/brand approval are not ready. Day 4 does not start Day 5 work automatically.
+
+## DAY-005 approved V4 creative direction — 2026-10-12
+
+The founder approved the Interactive Globe V4 visual/interaction direction. The [design handoff](design/day05/README.md) preserves the supplied executable HTML/screenshots and specifies maintainable components, state transitions, exact fictional financial expectations and remaining defects. “Your money. In perspective.” is approved reference hero copy; central configurable branding/tagline is unchanged. This does not resolve all Day 4 pricing, brand-clearance or commercial decisions.
+
+The repository still has no application scaffold; DAY-006 owns that work. Following the founder's explicit fallback instruction, Day 5 produces implementation-ready design artifacts, **not integrated Next.js components**. The available local prototype journey is hero → optional globe exploration → labeled money routes → Sample Data workspace → reversible fictional credit correction → limitations. The complete future upload/reconciliation/tax/CA journey above remains planned.
+
+Use the [component and waitlist contracts](design/day05/INTEGRATION.md) and [actual validation/backlog](design/day05/VALIDATION.md) at implementation time. The archived reference has two independently reproduced failures (reduced-motion decoration and compact transaction clipping), plus source-inspection refinements. A reviewed design artifact is not a working privacy-conscious waitlist; FIN-006 acceptance remains outstanding. This work used synthetic data and mocked location only; no feature release changed or Day 6 scaffold started.

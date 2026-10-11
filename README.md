@@ -49,6 +49,8 @@ The approved Day 1 scope defers FIN-027, FIN-063, FIN-066 and FIN-067 to V1.5. T
 
 ## Rebranding
 
+The founder-approved [Day 5 Interactive Globe V4 design handoff](docs/design/day05/README.md) includes a locally runnable reference, component contracts and independent validation. It is a design artifact for the planned Day 6 scaffold, not an implemented production frontend or working waitlist.
+
 Working name is configurable. Brand clearance is **not** complete: do trademark, domain, app store and market checks before public branding.
 
 ```bash

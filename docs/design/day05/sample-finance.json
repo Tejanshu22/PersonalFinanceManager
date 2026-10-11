@@ -1,0 +1,25 @@
+{
+  "status": "Synthetic design fixture; not customer data or a production ledger schema",
+  "currency": "INR",
+  "amount_encoding": "Signed exact decimal strings; negative means debit/purchase. Card activity is excluded from bank cash movement.",
+  "coverage": "One fictional bank account and selected card activity; own-account counterpart and full card history missing. Actual savings and net worth cannot be inferred.",
+  "correction_target": "sample-009",
+  "rows": [
+    {"id": "sample-001", "source": "fictional-bank", "description": "Employer salary", "amount": "82000.00", "classification": "income"},
+    {"id": "sample-002", "source": "fictional-bank", "description": "Apartment rent", "amount": "-18000.00", "classification": "spending", "category": "housing"},
+    {"id": "sample-003", "source": "fictional-bank", "description": "Groceries", "amount": "-8000.00", "classification": "spending", "category": "food"},
+    {"id": "sample-004", "source": "fictional-bank", "description": "Utilities", "amount": "-3000.00", "classification": "spending", "category": "utilities"},
+    {"id": "sample-005", "source": "fictional-card", "description": "Dining purchase", "amount": "-1750.00", "classification": "card_purchase", "category": "dining"},
+    {"id": "sample-006", "source": "fictional-bank", "description": "Card repayment, including earlier activity", "amount": "-6000.00", "classification": "card_repayment"},
+    {"id": "sample-007", "source": "fictional-bank", "description": "Investment contribution", "amount": "-9000.00", "classification": "investment"},
+    {"id": "sample-008", "source": "fictional-bank", "description": "Transfer to own bank; destination absent", "amount": "-15000.00", "classification": "own_transfer"},
+    {"id": "sample-009", "source": "fictional-bank", "description": "Unrecognized incoming credit", "amount": "3600.00", "classification": "unknown"}
+  ],
+  "expectations": {
+    "unknown": {"income": "82000.00", "consumption": "30750.00", "gross_own_account_movement": "15000.00", "unclassified_receipts": "3600.00", "investments": "9000.00", "card_repayments": "6000.00", "selected_bank_cash_change": "26600.00"},
+    "own_transfer": {"income": "82000.00", "consumption": "30750.00", "gross_own_account_movement": "18600.00", "unclassified_receipts": "0.00", "investments": "9000.00", "card_repayments": "6000.00", "selected_bank_cash_change": "26600.00"},
+    "income": {"income": "85600.00", "consumption": "30750.00", "gross_own_account_movement": "15000.00", "unclassified_receipts": "0.00", "investments": "9000.00", "card_repayments": "6000.00", "selected_bank_cash_change": "26600.00"}
+  },
+  "withheld_metrics": ["Actual total savings", "Net worth", "Tax liability"],
+  "limitations": "Rows were authored to explain reference totals, not recovered from its HTML. Reclassifications are overlays; raw source rows stay immutable. Classifying income does not establish tax treatment. Charts must derive from these rows when implemented. Refunds/reversals/matched transfers need separate future fixtures."
+}
