@@ -11,7 +11,7 @@
 | ☑ | 1 | Freeze V1 scope, personas and measurable success criteria | Verified Done | [GitHub](https://github.com/Tejanshu22/PersonalFinanceManager/issues/1) |
 | ☑ | 2 | Interview five salaried prospective users and summarize buying pain | Verified Done | [GitHub](https://github.com/Tejanshu22/PersonalFinanceManager/issues/10) |
 | ☑ | 3 | Interview five more prospects and two CAs; identify reviewer | Verified Done | [GitHub](https://github.com/Tejanshu22/PersonalFinanceManager/issues/11) |
-| ☐ | 4 | Analyze competitors, pricing, compliance risks and name conflicts | Planned | [GitHub](https://github.com/Tejanshu22/PersonalFinanceManager/issues/12) |
+| ☑ | 4 | Analyze competitors, pricing, compliance risks and name conflicts | Verified Done | [GitHub](https://github.com/Tejanshu22/PersonalFinanceManager/issues/12) |
 | ☐ | 5 | Create user journeys, wireframes, landing page and waitlist | Planned | — |
 
 
