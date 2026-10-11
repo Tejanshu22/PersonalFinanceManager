@@ -54,7 +54,7 @@ Use opaque event IDs and coarse outcomes; no raw financial content or account id
 
 ## Validation questions and experiments
 
-Days 2–3: interview ten genuine prospects across the two individual personas and two CAs, following [the interview guide](DAY_02_INTERVIEW_GUIDE.md). Ask about the last real statement/tax-document workflow before showing the concept.
+External follow-up: FIN-002 still requires ten real prospect interviews; the founder-approved Day 2 survey amendment does not supply them. Two CA interviews and professional review also remain pending under [Day 3 discovery](research/DAY_03_CA_DISCOVERY.md). Use [the interview guide](DAY_02_INTERVIEW_GUIDE.md), asking about the last real statement/tax-document workflow before showing the concept. These conversations can proceed alongside design; they are not falsely recorded as completed Days 2–3 work.
 
 - Would the person upload at all? What trust evidence, deletion controls, provider choice or AI opt-out changes that decision?
 - Can they explain a synthetic report's income, spending, transfers, repayments and coverage warning correctly?
@@ -66,3 +66,68 @@ Days 2–3: interview ten genuine prospects across the two individual personas a
 - Would they return next month? What concrete event prompts return without automated reminders?
 
 Record objections and refusals, not only favorable comments. A hypothetical yes is weaker evidence than later voluntary paid use; no sales or payment collection during interviews. Revisit packaging after interviews and controlled-beta cost evidence. Receipts, tax treatment, consumer disclosures, refunds and merchant approval require owner and qualified professional review before paid release.
+
+## DAY-004 pricing assessment — proposals, not approved changes
+
+Research dated **2026-10-11** is in the [market analysis](research/DAY_04_MARKET_ANALYSIS.md). Free connected tracking and low-cost tax-filing offers challenge both Plus and Tax Pack. A readiness-only package cannot claim equivalent value to filing simply because it costs less. FIN-004's tested-pricing acceptance remains unmet: no purchases, paid pilot, observed renewal or controlled pricing experiment is documented.
+
+Keep all five existing price hypotheses unchanged. Propose Free deliver one meaningful supported/reconciled month with corrections, source drilldown, coverage warnings and an understandable summary; capacity limits need measured cost evidence. Plus should charge for sustained multi-account/history use and bounded additional analysis, not correctness, deletion or access to existing records. Tax Pack could sell a reusable package for a named reporting period with controlled sharing and repeated corrections during a disclosed window. Its differentiation must be demonstrated to the user's existing CA; no filing, advice or appointed CA is included by default. Decide whether Plus includes a pack before displaying either offer publicly.
+
+Annual-only billing lowers transaction frequency but asks an unfamiliar user to trust a year of value before experiencing it. Test annual versus a clearly described one-time report concept; a monthly option is another research question, not an added SKU. A standalone report risks cannibalizing Free/Plus and must not charge to fix product errors. No price for either new option is approved. Seasonal use might support Tax Pack without annual Plus retention; don't build reminders or full CA SaaS to conceal that uncertainty.
+
+### Hypothetical first-year cohort model
+
+These are **illustrative stress scenarios, not forecasts, market benchmarks or spending authority**. All acquisition, activation, conversion, retention and cost figures are invented model inputs, explicitly unvalidated. “Optimistic” means favorable demand assumptions, not guaranteed profit. Each cohort is followed for twelve months from signup; no ramp, financing or accounting revenue-recognition schedule is modeled. Annual service cost is charged in full. The model is not the 85-day delivery budget.
+
+Plus and Tax Pack buyers are disjoint subsets of activated users: nobody is charged/counts in both. Nonbuyers include inactive registrants. All paid amounts are assumed successfully settled; failed attempts produce no revenue. A 3% proportional refund assumption covers refunds only, not a validated chargeback rate. Year-two renewal assumptions are shown but produce no year-one revenue. The hypothetical second-month retention does not reduce the annual cost inputs again.
+
+| Assumed input | Conservative | Base Case | Optimistic |
+| --- | ---: | ---: | ---: |
+| Unique acquired landing visitors | 5,000 | 20,000 | 80,000 |
+| Signup rate / registrants | 10% / 500 | 10% / 2,000 | 10% / 8,000 |
+| Activation / activated users | 20% / 100 | 30% / 600 | 40% / 3,200 |
+| Plus buyers / activated conversion | 5 / 5% | 60 / 10% | 800 / 25% |
+| Additional Tax Pack buyers / activated conversion | 5 / 5% | 40 / 6.67% rounded | 200 / 6.25% |
+| Next-month retained / activated | 20% | 35% | 50% |
+| Eventual eligible Plus renewal, year two only | 30% | 50% | 70% |
+| Plus annual / Tax Pack one-time price | ₹999 / ₹499 | ₹999 / ₹499 | ₹999 / ₹499 |
+| Annual cost per nonbuyer | ₹12 | ₹18 | ₹24 |
+| Annual processing per Plus / per pack buyer | ₹60 / ₹30 | ₹90 / ₹45 | ₹120 / ₹60 |
+| Support per buyer, minutes at ₹300/hour | 30 | 20 | 15 |
+| Fixed annual hosting/base operations | ₹60,000 | ₹90,000 | ₹120,000 |
+| Annual legal/security/tax-review allowance | ₹60,000 | ₹90,000 | ₹120,000 |
+| Cash acquisition budget | ₹10,000 | ₹30,000 | ₹60,000 |
+| Founder non-support labor allowance | ₹300,000 | ₹300,000 | ₹300,000 |
+
+Cost allowances are not supplier quotes and may be insufficient. Per-user processing includes scanning/parsing retries, AI use, encrypted storage/backups and messages; nonbuyer cost also includes averaged free support. Paid support is separate. Fixed hosting covers baseline services only, avoiding double-counting marginal usage. Founder non-support allowance includes acquisition/design/operations time; buyer support is excluded from it. More use can increase costs, hence the higher per-user processing stress assumptions at scale.
+
+For this sensitivity only, prices are assumed **inclusive of 18% output tax**, with refunds reducing the taxable amount; no input-tax credit is assumed. FINNest's actual GST registration, rate, invoice and refund treatment require CA advice and could differ. Payment-fee assumption is **2% plus 18% tax on that fee = 2.36% of gross settled receipts**, with no recovery of original processing fees on refund. This is a model input, not a gateway quote. [Razorpay's current page](https://razorpay.com/pricing/), accessed 2026-10-11, contains promotional and method-specific pricing (including a displayed 2.15% + GST platform fee); obtain a written quote and rerun the model before selecting a provider. Recurring mandates, international methods, chargebacks and special services can change costs.
+
+| Calculated first-year result, INR | Conservative | Base Case | Optimistic |
+| --- | ---: | ---: | ---: |
+| Gross settled receipts | ₹7,490.00 | ₹79,900.00 | ₹899,000.00 |
+| Refund allowance, 3% | ₹224.70 | ₹2,397.00 | ₹26,970.00 |
+| Net revenue after refunds/assumed output tax | ₹6,157.03 | ₹65,680.51 | ₹739,008.47 |
+| Payment fees including assumed fee tax | ₹176.76 | ₹1,885.64 | ₹21,216.40 |
+| Nonbuyer subsidy | ₹5,880.00 | ₹34,200.00 | ₹168,000.00 |
+| Buyer processing | ₹450.00 | ₹7,200.00 | ₹108,000.00 |
+| Buyer support labor | ₹1,500.00 | ₹10,000.00 | ₹75,000.00 |
+| Cohort contribution after all variable costs | −₹1,849.73 | ₹12,394.87 | ₹366,792.07 |
+| After fixed costs and cash acquisition, before founder non-support labor | −₹131,849.73 | −₹197,605.13 | ₹66,792.07 |
+| Economic result including founder non-support labor | **−₹431,849.73** | **−₹497,605.13** | **−₹233,207.93** |
+
+Reproducible formulas: `gross = 999 × Plus + 499 × packs`; `net = gross × 0.97 / 1.18`; `fee = gross × 0.0236`; `free = (registrants − Plus − packs) × nonbuyer cost`; `processing = Plus × Plus cost + packs × pack cost`; `support = (Plus + packs) × minutes / 60 × 300`. Contribution is net less fee/free/processing/support. Deduct both fixed allowances, acquisition and founder labor for the economic result. Calculations use Python Decimal with exact decimal inputs, rounding displayed INR to two decimals only at the end. Conversion counts are primary; the 6.67% display is rounded, not used to derive buyers.
+
+Interpretation: none of these cohorts funds all modeled work. The optimistic case covers its assumed cash/fixed costs but not the founder labor allowance. This does not prove the business cannot work; it shows that ₹999 revenue alone is not profitability and that free-user subsidy, human support and acquisition matter. An extra ten minutes of paid support at the modeled labor rate costs ₹50 per buyer. A one-percentage-point processing-fee increase costs 1% of gross receipts. Measure real costs and revise hypotheses before calculating a credible break-even point or customer lifetime value. Reserves for unmodeled disputes or unexpectedly expensive reviews would worsen the results.
+
+### Experiments requiring founder approval and real behavior
+
+| Experiment | What to observe | What does not validate it |
+| --- | --- | --- |
+| Sample report comprehension and upload decision | Can target users distinguish income/spending/transfers, spot missing coverage, and explain informed upload refusal/acceptance? Start with synthetic data | Positive landing-page reaction or selected privacy features |
+| Annual Plus versus seasonal Tax Pack concept | Recent job, alternative replaced, preferred entitlement/access window and reason for choosing neither | Hypothetical price-band selection; two students do not represent employed buyers |
+| Later bounded paid beta, approved price/terms only | Voluntary settled non-test purchases after useful output; eligible-offer denominator, support/refunds, repeat use | Checkout clicks, free trials or founder-subsidized purchases |
+| One-time report versus annual commitment | Whether occasional users pay for a defined output without reducing total contribution; price/limits require approval first | Invented demand, an unimplemented “buy” button implying availability |
+| Renewal/retention follow-up | Next-month work and eventual renewal among eligible subscribers, segmented by persona/offer | Annual renewal forecast treated as observed retention |
+
+Predeclare sample/window, loss cap, stopping rules and success criteria with the founder before collecting payments. No experiment is conducted here. Interview refusals and failed tasks are evidence; changes to approved prices, entitlements or releases require a separate decision.

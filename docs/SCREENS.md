@@ -40,3 +40,44 @@ DAY-001 review: screen scope follows [requirements](REQUIREMENTS.md). FIN-027, F
 - Net worth, assets and liabilities; financial goals; family view.
 - Regulated data connections and authorized e-filing.
 - Native Android/iOS when retention justifies the expense.
+
+## DAY-005 handoff from DAY-004 — design proposal only
+
+Use the [market analysis](research/DAY_04_MARKET_ANALYSIS.md), [pricing hypotheses](MONETIZATION.md) and [CA journey](research/DAY_03_CA_WORKFLOW.md) as inputs. No wireframes, landing page, waitlist or UI were implemented during Day 4; FIN-006's working-page acceptance remains untested.
+
+**Recommended primary customer:** an employed Indian adult with multiple accounts/cards, a recent confusing month and an existing tax-document/CA workflow. Salary plus supplementary freelance income remains secondary. **Headline to test:** “Make sense of your monthly money. Keep your tax documents ready.” This is candidate copy, not an approved brand tagline or a claim that features are live.
+
+Three problem hypotheses to design around: (1) ambiguous transactions/transfers obscure consumption and cash movement; (2) financial-data access/privacy concerns may discourage upload; (3) scattered records and repeated uploads may make tax preparation burdensome. These are interpretations of exploratory signals from three employed survey respondents, not observed upload refusals, population findings or proven severity.
+
+```mermaid
+flowchart LR
+    A[Synthetic sample and limits] --> B[Supported format and privacy explanation]
+    B --> C[Register and choose purposes]
+    C --> D[Upload supported statement]
+    D --> E[Reconcile and review uncertain rows]
+    E --> F[Source-linked month explanation]
+    F --> G[Period-specific document checklist]
+    G --> H[Selected CA package and expiring grant]
+    F --> I[Optional eligible upgrade]
+```
+
+Design failure branches as first-class screens: unsupported/scanned PDF, canceled upload, duplicate, processing failure, incomplete coverage, unreconciled balance, wrong period, denied AI consent, missing document, expired grant and revocation. No silent success or assumption of complete savings. Never ask for bank/portal credentials. Provider-specific import choices remain pending safe fixtures.
+
+Before upload, disclose purposes, supported formats, account/period coverage, encryption/access controls actually verified, processor/AI boundaries, retention/deletion and backup exceptions, safe support access, user choices and withdrawal. Do not market proposed controls as certifications. Before sharing, show the exact recipient/documents/snapshot, expiry/download scope and the inability to recall downloaded copies. Before payment, show total price, period, limits, renewal/refund terms and exclusions. Qualified review must resolve [regulatory questions](REGULATORY_REVIEW.md) before public promises/real data.
+
+Proposed navigation groups the existing screen inventory: **Overview; Transactions/Imports; Reports; Tax Documents & Readiness; CA Sharing; Settings & Billing**. Ask My Money can sit within Reports/Overview rather than dominate first use. This changes presentation emphasis only, not feature scope or architecture. Keep staff-only policy/support screens outside customer navigation.
+
+First pricing research: compare Free, the existing ₹999/year Plus hypothesis and ₹499 named-period Tax Pack after a sample outcome; ask what actual alternative they replace. Test annual-commitment objections and a one-time report concept without adding an unapproved price/SKU. Later paid behavior requires approved entitlements, working safeguards, merchant terms and a predefined experiment; clicks/positive survey answers are insufficient.
+
+Day 5 readiness checklist:
+
+- [ ] Founder selects/adjusts the clarity-first positioning and sample headline (D4-01).
+- [ ] Design the complete sample → upload → reconciliation → explanation task, including all failure/privacy states; no implementation claim.
+- [ ] Explain tax checklist completeness separately from legal tax correctness; retain Day 3 professional-review questions.
+- [ ] Annotate Free/Plus/Tax Pack boundaries as pending where unresolved (D4-02); do not silently decide paywalls.
+- [ ] Specify optional, minimal-contact waitlist consent/storage/retention; no financial-document collection or live publishing without approval.
+- [ ] Include measured-task prompts and dissent/refusal capture; no invented results.
+- [ ] Resolve brand strategy or keep visibly provisional branding in private drafts; professional clearance remains a public-launch gate.
+- [ ] Preserve reviewed external-evidence limits, V1 scope and Day 60/85 planning targets.
+
+The materials are sufficient to begin Day 5 design after founder review; public rollout, live data collection and professional/tax/brand approval are not ready. Day 4 does not start Day 5 work automatically.

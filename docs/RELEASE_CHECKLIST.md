@@ -56,6 +56,8 @@ The Day 75 target depends on reviewer availability and remediation. If a gate fa
 - [ ] Controlled-beta evidence supports advertised capabilities; known limitations and supported formats are public.
 - [ ] Pricing, entitlements, renewal/refund terms, receipts and legal disclosures approved.
 - [ ] Working brand clearance/domain/legal-entity questions resolved for public marketing; configurable branding preserved.
+- [ ] DAY-004 [regulatory follow-ups](REGULATORY_REVIEW.md) have dated applicability decisions, including the 2026 consumer amendment, privacy phases/retention and CA engagement boundaries; relevant safeguards are tested, not inferred from research.
+- [ ] [Brand findings](BRANDING.md) are professionally resolved before public brand expenditure; name use in configuration is not clearance.
 - [ ] Production alerts, recovery, support and rollback contacts verified in a final rehearsal.
 - [ ] Owner records explicit go/no-go and independent financial/tax/security/privacy reviews as applicable.
 
