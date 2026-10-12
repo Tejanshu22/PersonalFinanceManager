@@ -1,10 +1,11 @@
 {
-  "synced_at": "2026-10-11 16:54 UTC",
+  "synced_at": "2026-10-11 21:53 UTC",
   "name": "FINNest",
   "counts": {
-    "Planned": 194
+    "Planned": 193,
+    "Verified Done": 1
   },
-  "v1_verified": 0,
+  "v1_verified": 1,
   "v1_total": 140,
   "days_verified": 4,
   "days_total": 85
