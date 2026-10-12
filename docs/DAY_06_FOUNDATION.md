@@ -1,5 +1,34 @@
 # DAY-006 — technical foundation and local staging
 
+## Compact viewport PR regression — 2026-10-12
+
+Review baseline: `codex/day-006-docker-security`, HEAD `441b6ef`, initially clean working tree. The founder reported job `114742308382` failing only the 320×568 overflow assertion. Read-only GitHub PR/job API requests timed out, so the remote PR identity, job revision and current CI status remain independently unverified. The local comparison against `master` contains the existing nine-file Docker remediation; this fix adds only CSS, browser coverage and this evidence section. No commit, push, issue change or Day 7 work is authorized here.
+
+Reproduction used the unchanged production application, Node 22.23.3 and locked Playwright 1.64.0 Chromium in a disposable Debian Bookworm container. This matches the workflow's Node/build/browser tooling, but is not an Ubuntu runner clone. Initially its WenQuanYi system-font fallback passed. Installing `fonts-dejavu-core` selected DejaVu Sans and reproduced **exactly 30 passes / 1 failure, document width 344px at viewport 320px**. The source CSS hash matched the checkout. Thus the defect is reproducible with a supported system-font fallback; the remote runner's installed fonts could not be independently inspected.
+
+At scroll position zero, measured rectangles and layout constraints were:
+
+| Element / component | Before: x, y, width, right (px) | Computed sizing / cause | After: width / right (px) |
+| --- | --- | --- | --- |
+| `.h1 span`, [GlobeStory](../frontend/components/GlobeStory.tsx) | 22.39, 253.06, 321.39, 343.78 | Inline width `auto`, min-width `0`; 42px font and `white-space: nowrap` exceed the heading's 258.70px content width | 244.88 / 267.27 |
+| `.hero-cta .primary`, GlobeStory | 22.39, 458.05, 314.30, 336.69 | Width 314.30px, min-width `auto`, nowrap text plus 42px horizontal padding in a 275.22px flex parent | 275.22 / 297.61 |
+| `.sample-label`, [SampleDashboard](../frontend/components/SampleDashboard.tsx) | 16, 4218.08, 307.55, 323.55 | Width 307.55px, min-width `0`, nowrap monospace badge in 288px `.demo-top` | 288 / 304 |
+| `.final-inner`, [ProductStory](../frontend/components/ProductStory.tsx) | 19.19, 9938.83, 302.61, 321.80 | Min-width `auto`; 61px heading imposes a 302.61px grid minimum on `#finale`, whose available content width is 281.60px | 281.63 / 300.81 |
+
+The decorative `.globe-atmosphere` also extends beyond the viewport, but its existing clipped `.stage` contains it; it does not cause document overflow and was left intact. Eleven sampled scroll positions (hero, all chapters, money flows, demo, how, trust, finale and footer) expose the same document-wide defect.
+
+The [CSS fix](../frontend/app/globals.css) is restricted to the existing compact breakpoint, ≤370px: responsive hero/finale heading sizes and parent-constrained, wrapping CTA/badge text. A focused hit-target test then caught the reflowed secondary link intercepting the pause control; allowing the hero description its full parent width and reducing the CTA gap to 10px resolves that regression. There is no new global clipping or width rule. Layouts at 390px and above retain their existing CSS. The [browser harness](../frontend/tests/check-app.mjs) retains the strict overflow assertion at all four sizes, now waiting for fonts, checking globe control bounds and center hit targets, measuring all eleven page positions, saving full-page screenshots and closing each context even on failure.
+
+Verification after the fix (synthetic data only):
+
+- `npm run build`: PASS in Linux Node 22, production `/` and `/_not-found` routes generated.
+- `npm run lint`, `npm run typecheck`, `npm test`: PASS; **5/5** exact financial fixture tests, including paise and reversible corrections.
+- `npm run test:browser`: **31/31 PASS** with DejaVu Sans; scrollWidth equals viewport width at **320, 390, 768 and 1440px**, across eleven positions each. Globe rotation/drag/zoom/reset, anchoring, mocked location, transaction correction, mobile touch/menu, keyboard outline and initial/runtime reduced motion pass. The original pre-fix suite reproduced **30/31**, with the single reported overflow failure.
+- Focused 320px inspection also exercised the menu, Escape, primary CTA and focus outline. Additional Playwright measurements confirm all four 44px globe controls are reachable and the hovered marker tooltip fits inside each of the four required viewports. Before/after hero, finale, dashboard and full-page screenshots are local ignored test evidence, not customer records. Compact vertical story/location-panel crowding predates this fix and is not represented as resolved by the horizontal-overflow check.
+- `python scripts/validate_manifest.py`: PASS, 194 features / 85 days. `python scripts/check_docs.py`: local Markdown targets pass; external URLs and fragments are not validated.
+- `python -m unittest discover -s tests -v`: **6/6 PASS** with ordinary filesystem permissions; the first sandbox run had one temporary-directory permission error, not a tracker assertion failure.
+- `git diff --check`: PASS. Review and a new remote CI run remain required before merge; local tests do not establish remote CI success or security approval.
+
 **2026-10-12 · implementation for founder review; not verified or released.**
 
 **Current remediation status:** the original scaffold was committed as `908693a` and integrated into baseline `bc307f55fd8703dda78d1f085fdb55508e26a80f`. The Docker remediation below is on `codex/day-006-docker-security`, awaiting founder acceptance and commit approval. Earlier test results, Git state and issue-lookup statements in this report are historical snapshots, not current acceptance. No Day 7 implementation is included.
