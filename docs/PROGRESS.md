@@ -3,26 +3,26 @@
 > AUTO-GENERATED from `data/features.json`, `data/daily_plan.json` and GitHub Issues. Do not hand-edit this file.
 
 **Synced:** 2026-10-12 08:40 UTC  
-**Verified features:** 1/194 (0.5%)  
-**V1 verified:** 1/140 (0.7%)  
+**Verified features:** 2/194 (1.0%)  
+**V1 verified:** 2/140 (1.4%)  
 **Verified daily tasks:** 4/85
 
 ## Feature status overview
 
 | Status | Features |
 | --- | --- |
-| Planned | 193 |
+| Planned | 192 |
 | In Progress | 0 |
 | Blocked | 0 |
 | Needs Review | 0 |
-| Verified Done | 1 |
+| Verified Done | 2 |
 
 
 ## Release breakdown
 
 | Release | Total | Verified | Progress |
 | --- | --- | --- | --- |
-| V1 | 140 | 1 | 0.7% |
+| V1 | 140 | 2 | 1.4% |
 | V1.5 | 14 | 0 | 0.0% |
 | V2 | 20 | 0 | 0.0% |
 | V3+ | 8 | 0 | 0.0% |
@@ -32,6 +32,7 @@
 ## Verified work
 
 - **FIN-005** Brand configuration and rename policy ([issue](https://github.com/Tejanshu22/PersonalFinanceManager/issues/6))
+- **FIN-006** Landing page and waitlist ([issue](https://github.com/Tejanshu22/PersonalFinanceManager/issues/7))
 
 ## Needs review or blocked
 

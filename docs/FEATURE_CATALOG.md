@@ -13,7 +13,7 @@
 | ☐ | FIN-003 | CA workflow discovery | Planned | At least two professional workflow interviews documented |
 | ☐ | FIN-004 | Competitor and pricing research | Planned | Comparison and tested price hypotheses recorded |
 | ☑ | FIN-005 | Brand configuration and rename policy | Verified Done | Display name comes only from config and rebrand guide exists |
-| ☐ | FIN-006 | Landing page and waitlist | Planned | Privacy-conscious waitlist and signup flow works |
+| ☑ | FIN-006 | Landing page and waitlist | Verified Done | Privacy-conscious waitlist and signup flow works |
 | ☐ | FIN-007 | Product acceptance criteria | Planned | V1 functions have explicit pass/fail conditions |
 | ☐ | FIN-008 | Risk register and decision log | Planned | Major assumptions and risks have owners and follow-ups |
 
