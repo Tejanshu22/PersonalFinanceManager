@@ -1,6 +1,37 @@
 # DAY-006 — technical foundation and local staging
 
+## Compact viewport PR regression — 2026-10-12
+
+Review baseline: `codex/day-006-docker-security`, HEAD `441b6ef`, initially clean working tree. The founder reported job `114742308382` failing only the 320×568 overflow assertion. Read-only GitHub PR/job API requests timed out, so the remote PR identity, job revision and current CI status remain independently unverified. The local comparison against `master` contains the existing nine-file Docker remediation; this fix adds only CSS, browser coverage and this evidence section. No commit, push, issue change or Day 7 work is authorized here.
+
+Reproduction used the unchanged production application, Node 22.23.3 and locked Playwright 1.64.0 Chromium in a disposable Debian Bookworm container. This matches the workflow's Node/build/browser tooling, but is not an Ubuntu runner clone. Initially its WenQuanYi system-font fallback passed. Installing `fonts-dejavu-core` selected DejaVu Sans and reproduced **exactly 30 passes / 1 failure, document width 344px at viewport 320px**. The source CSS hash matched the checkout. Thus the defect is reproducible with a supported system-font fallback; the remote runner's installed fonts could not be independently inspected.
+
+At scroll position zero, measured rectangles and layout constraints were:
+
+| Element / component | Before: x, y, width, right (px) | Computed sizing / cause | After: width / right (px) |
+| --- | --- | --- | --- |
+| `.h1 span`, [GlobeStory](../frontend/components/GlobeStory.tsx) | 22.39, 253.06, 321.39, 343.78 | Inline width `auto`, min-width `0`; 42px font and `white-space: nowrap` exceed the heading's 258.70px content width | 244.88 / 267.27 |
+| `.hero-cta .primary`, GlobeStory | 22.39, 458.05, 314.30, 336.69 | Width 314.30px, min-width `auto`, nowrap text plus 42px horizontal padding in a 275.22px flex parent | 275.22 / 297.61 |
+| `.sample-label`, [SampleDashboard](../frontend/components/SampleDashboard.tsx) | 16, 4218.08, 307.55, 323.55 | Width 307.55px, min-width `0`, nowrap monospace badge in 288px `.demo-top` | 288 / 304 |
+| `.final-inner`, [ProductStory](../frontend/components/ProductStory.tsx) | 19.19, 9938.83, 302.61, 321.80 | Min-width `auto`; 61px heading imposes a 302.61px grid minimum on `#finale`, whose available content width is 281.60px | 281.63 / 300.81 |
+
+The decorative `.globe-atmosphere` also extends beyond the viewport, but its existing clipped `.stage` contains it; it does not cause document overflow and was left intact. Eleven sampled scroll positions (hero, all chapters, money flows, demo, how, trust, finale and footer) expose the same document-wide defect.
+
+The [CSS fix](../frontend/app/globals.css) is restricted to the existing compact breakpoint, ≤370px: responsive hero/finale heading sizes and parent-constrained, wrapping CTA/badge text. A focused hit-target test then caught the reflowed secondary link intercepting the pause control; allowing the hero description its full parent width and reducing the CTA gap to 10px resolves that regression. There is no new global clipping or width rule. Layouts at 390px and above retain their existing CSS. The [browser harness](../frontend/tests/check-app.mjs) retains the strict overflow assertion at all four sizes, now waiting for fonts, checking globe control bounds and center hit targets, measuring all eleven page positions, saving full-page screenshots and closing each context even on failure.
+
+Verification after the fix (synthetic data only):
+
+- `npm run build`: PASS in Linux Node 22, production `/` and `/_not-found` routes generated.
+- `npm run lint`, `npm run typecheck`, `npm test`: PASS; **5/5** exact financial fixture tests, including paise and reversible corrections.
+- `npm run test:browser`: **31/31 PASS** with DejaVu Sans; scrollWidth equals viewport width at **320, 390, 768 and 1440px**, across eleven positions each. Globe rotation/drag/zoom/reset, anchoring, mocked location, transaction correction, mobile touch/menu, keyboard outline and initial/runtime reduced motion pass. The original pre-fix suite reproduced **30/31**, with the single reported overflow failure.
+- Focused 320px inspection also exercised the menu, Escape, primary CTA and focus outline. Additional Playwright measurements confirm all four 44px globe controls are reachable and the hovered marker tooltip fits inside each of the four required viewports. Before/after hero, finale, dashboard and full-page screenshots are local ignored test evidence, not customer records. Compact vertical story/location-panel crowding predates this fix and is not represented as resolved by the horizontal-overflow check.
+- `python scripts/validate_manifest.py`: PASS, 194 features / 85 days. `python scripts/check_docs.py`: local Markdown targets pass; external URLs and fragments are not validated.
+- `python -m unittest discover -s tests -v`: **6/6 PASS** with ordinary filesystem permissions; the first sandbox run had one temporary-directory permission error, not a tracker assertion failure.
+- `git diff --check`: PASS. Review and a new remote CI run remain required before merge; local tests do not establish remote CI success or security approval.
+
 **2026-10-12 · implementation for founder review; not verified or released.**
+
+**Current remediation status:** the original scaffold was committed as `908693a` and integrated into baseline `bc307f55fd8703dda78d1f085fdb55508e26a80f`. The Docker remediation below is on `codex/day-006-docker-security`, awaiting founder acceptance and commit approval. Earlier test results, Git state and issue-lookup statements in this report are historical snapshots, not current acceptance. No Day 7 implementation is included.
 
 ## Exact scheduled task and dependencies
 
@@ -105,7 +136,7 @@ npm run dev -- --bind 127.0.0.1
 
 Open `http://127.0.0.1:8000/FINNest_Interactive_Globe_V4.html`; stop with Ctrl+C. This npm command still invokes Python, and the archived source retains its documented Day 5 defects. It is separate from the real Next.js route.
 
-## Validation and remaining issues
+## Historical scaffold validation and remaining issues
 
 | Check | Actual result on 2026-10-12 |
 | --- | --- |
@@ -148,7 +179,7 @@ If a successful later lookup proves it absent, proposed issue title: **[DAY-006]
 
 DAY-007 should use the monolith/database foundation to design the canonical ledger, ownership, exact amount/date/currency conventions and reversible migrations with independent fixtures. Do not treat this sample UI fixture as the production schema. Authentication remains Day 8. No remapping of the 85-day schedule is needed; earlier Day 1 dependency proposals remain separately pending. FIN-006's waitlist remains open work. Nothing here authorizes commits, pushes, real-data onboarding or public release.
 
-## Changed-file inventory
+## Historical scaffold changed-file inventory
 
 Modified: `.gitignore`, `README.md`, `docs/ARCHITECTURE.md`, `docs/DECISIONS.md`, `docs/RELEASE_CHECKLIST.md`, `docs/SCREENS.md`, `docs/SECURITY.md`. The tracked diff is 33 additions and 4 removals; the 37 new task files below are not included in ordinary Git diff statistics.
 
@@ -195,3 +226,57 @@ scripts/check_docs.py
 Pre-existing untracked files retained separately: root `package-lock.json` and `docs/design/day05/reference/package.json`. Ignored dependencies, build outputs, local-only `.env`, virtual environment and temporary verification copies are not deliverables. Nothing is staged, committed or pushed.
 
 Final local staging is running for review at `http://127.0.0.1:3000` with API on port 8001. Stop it with `docker compose down` before using the default native development ports. The temporary native dev/production/prototype test servers were stopped.
+
+## DAY-006 Docker security remediation — 2026-10-12
+
+### Baseline, causes and changes
+
+The remediation began on clean `master` at `bc307f5`. The founder authorized fixing both review findings before Day 7. Root `package-lock.json` and `docs/design/day05/reference/package.json`, previously untracked, were included in `908693a`; both remain unchanged here. The root lock contains an empty package graph (redundant for the frontend); the prototype package contains only the Python-server shortcut. Neither contains credentials. No tracked environment settings, node_modules, build output or real financial records were identified; the reviewed `.env.example` contains a disposable placeholder only.
+
+Both Compose services build with repository-root context. There are no frontend/backend Dockerfile-specific ignore files. Original `.env`/`.env.*` Docker rules applied only at root, while `COPY frontend ./` could copy nested environment settings. Separately, the final frontend stage copied the complete build workspace, shipping development dependencies even though `npm audit --omit=dev` was clear.
+
+- [.dockerignore](../.dockerignore) now excludes environment files at every depth (`**/.env`, `**/.env.*`), nested Git metadata, private-key filename patterns and TypeScript build caches. The safe root example stays in Git but is deliberately excluded from images too; no broad example exception is needed.
+- [Frontend Dockerfile](../frontend/Dockerfile) separates dependency installation, build and runtime. Before source COPY, a read-only BuildKit mount checks the actual filtered context and fails if any `.env*` entry remains or inspection fails. Values are never printed. This also detects Dockerfile-specific exclusion regressions during a real build.
+- [Next configuration](../frontend/next.config.ts) enables standalone output only when Docker sets `BUILD_STANDALONE=1`. Tracing covers the repository root for existing outside-package imports. Ordinary native build/start remains supported. See [official standalone output documentation](https://nextjs.org/docs/app/api-reference/config/next-config-js/output), accessed 2026-10-12.
+- Runtime copies only traced standalone output, `.next/static` and `public` (currently empty), then starts `node frontend/server.js` as UID/GID 1000 (`node`). Port 3000 and hostname are explicit. All existing security headers remain present. Compose is unchanged: frontend/API publish to 127.0.0.1 only; PostgreSQL has no published host port.
+- [Container regression check](../scripts/check_container_security.py) creates fake environment sentinels, forces the real context guard, builds the actual Compose images and scans every saved build/runtime/backend image layer. It checks values as well as filenames, so deleting a copied sentinel in a later layer cannot produce a false pass. It refuses unreviewed Dockerfile-specific ignore overrides, preserves existing files, and removes only its own sentinels/directories in `finally`.
+- [Application CI](../.github/workflows/application.yml) gains the same container check and local health probes. Job timeouts bound execution; existing read-only permissions and master/PR triggers are preserved. Tracker CI is unchanged. This workflow change has local validation only; its remote execution is not independently verified.
+
+### New verification evidence
+
+The [container evidence](evidence/day06/docker-security.json) and [browser evidence](evidence/day06/docker-browser-checks.json) record this remediation separately from the historical scaffold report. Browser tests use synthetic finances and mocked location only. No genuine location or financial documents were collected.
+
+| Command / inspection | Observed result |
+| --- | --- |
+| `python scripts/check_container_security.py` | PASS: 24 synthetic files across root, frontend, backend and nested folders; existing root `.env` preserved byte-for-byte; all sentinels removed |
+| Harness: `docker build --no-cache-filter build --target build -f frontend/Dockerfile -t personal-finance-local-frontend-security-build .` | PASS: actual filtered context guard ran before COPY; builder layer inspection found no environment paths or sentinel bytes |
+| Harness: `docker compose build frontend api` | Both images built; runtime and API layer inspection found no environment paths or sentinel bytes |
+| `docker compose config --quiet`; `docker compose up -d --no-build --wait --wait-timeout 90` | PASS; existing synthetic DB volume retained, no reset |
+| HTTP probes using Python urllib with local proxy bypass | Frontend `/` 200, expected brand/globe/Sample Data and headers; API live/ready both 200 with expected sanitized JSON |
+| `docker compose exec -T db pg_isready -U local_app -d finance_synthetic`; `psql -U local_app -d finance_synthetic -tAc 'SELECT 1'` | Accepting connections; result `1` |
+| From frontend: `npm run lint`; `npm run typecheck`; `npm test`; `npm run build` | PASS; five exact financial tests; native production build passes with default output after sentinel cleanup |
+| `DESIGN_BROWSER_CHANNEL=chrome npm --prefix frontend run test:browser` (PowerShell environment assignment locally) | 31/31 PASS against the remediated Docker route: globe/scroll/control/location/reduced-motion/category/correction/mobile/keyboard checks; no page errors or third-party requests |
+| `backend/.venv/Scripts/python.exe -m pytest -q backend` | 5/5 PASS; existing Starlette/httpx deprecation warning remains |
+| `python -m unittest discover -s tests -v` | 6/6 tracker tests PASS |
+| `python scripts/validate_manifest.py` | PASS: 194 features / 85 days; manifests and release assignments unchanged |
+| `python scripts/check_docs.py`; `git diff --check` | PASS; local file links only, not external URLs or heading fragments |
+
+The native frontend build was initially run while fake sentinels existed and correctly reported loading local environment files outside Docker. It was repeated successfully after cleanup. Docker builds never loaded those files. Git emits the existing LF-to-CRLF informational warnings; no whitespace failures occurred. No build, unit or browser failures remain in the remediation run.
+
+The pre-remediation local image measured **1,193,226,713 bytes**. The standalone image is **420,660,300 bytes**, a **64.7% reduction** (Docker's local image Size metric, not registry transfer size; exact current bytes are in the evidence). Application contents are `/app/frontend/server.js`, `.next` server/static artifacts, traced runtime `node_modules`, package metadata and `public`. Raw application source, raw financial fixture JSON, tests, repository history, environment files and the listed development packages are absent. The standard Node/Debian base still includes its normal OS and bundled package-manager components; this is not a distroless image, OS vulnerability scan or security certification.
+
+### Current dependency disposition
+
+On Windows Node 25.2.1 / npm 11.6.2 against `https://registry.npmjs.org/`, actual `npm audit --omit=dev --json` reports **0 vulnerabilities**; full `npm audit --json` still reports **5 high entries**. `npm explain braces` confirms this single chain:
+
+`eslint-config-next@16.4.0` (direct dev) → `@next/eslint-plugin-next@16.4.0` → `fast-glob@3.3.1` → `micromatch@4.0.8` → `braces@3.0.3` (transitive dev).
+
+The underlying [GHSA-vfj7-8cjw-p6xm / CVE-2026-93687 advisory](https://github.com/advisories/GHSA-vfj7-8cjw-p6xm), accessed 2026-10-12, covers stack-exhaustion denial of service from deeply nested brace patterns and lists no patched version. Registry checks `npm view braces version` and `npm view eslint-config-next version` returned 3.0.3 and 16.4.0. npm's suggested 14.2.35 lint-config downgrade changes major versions and is not a compatible fix for this Next 16 scaffold. No forced fix, override, dependency upgrade or lockfile change was applied.
+
+All five affected packages, plus ESLint, TypeScript, tsx, Playwright and Prettier, are absent from the runtime layers. They remain in the development/build environment. No application HTTP input is passed into lint globs, but developer/CI availability risk remains when processing malicious patterns/configuration. Mitigations are runtime separation, version-controlled tooling, read-only CI without production credentials and bounded jobs; these do not patch the underlying vulnerability. Proposed owner: technical lead, with founder review of this residual risk and compatible-update rechecks before public release. The zero production audit describes the npm production graph only, not every binary or OS package in the image.
+
+### Acceptance and Day 7 boundary
+
+Both Docker review findings now have local remediation evidence. Founder review, explicit commit/push approval, relevant remote CI on the reviewed commit and the repository acceptance gate remain required. Current remote GitHub CI/issue state has not been independently confirmed; historical failed lookups are not evidence of absence or current failure. No issue, label, commit or push was changed by this remediation.
+
+Day 7 can resume from the accepted, committed/integrated remediation baseline after those approvals. O-04 monetary conventions remain pending and must not be inferred from this Docker work. Real-data onboarding, auth, ledger/migrations, bank uploads, tax calculations, payments and CA sharing remain outside this change.

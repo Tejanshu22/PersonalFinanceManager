@@ -1815,6 +1815,27 @@ html.has-js .scene-shell .stage.is-pinned.is-exiting {
     z-index: 16;
   }
 }
+/* Compact screens must also fit wider system-font fallbacks (e.g. Linux DejaVu).
+   Keep the hero's two lines; let CTA and sample-label text wrap within their parent. */
+@media (max-width: 370px) {
+  .h1 {
+    font-size: clamp(32px, 10vw, 42px);
+  }
+  .hero-desc {
+    max-width: 100%;
+  }
+  .hero-cta {
+    gap: 10px;
+  }
+  .hero-cta .primary,
+  .sample-label {
+    max-width: 100%;
+    white-space: normal;
+  }
+  .final-inner h2 {
+    font-size: clamp(42px, 13vw, 61px);
+  }
+}
 @media (prefers-reduced-motion: reduce) {
   html.has-js .scene-shell .stage {
     transition: none !important;

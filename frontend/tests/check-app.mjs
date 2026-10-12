@@ -389,16 +389,69 @@ const base = process.env.APP_URL || "http://127.0.0.1:3000/";
   ])
     await check(`No horizontal overflow ${width}x${height}`, async () => {
       const page = await pageFor({ width, height });
-      const measured = await page.evaluate(() => ({
-        width: innerWidth,
-        scrollWidth: document.documentElement.scrollWidth,
-      }));
-      assert.ok(
-        measured.scrollWidth <= measured.width,
-        JSON.stringify(measured),
-      );
-      await page.context().close();
-      return measured;
+      const measurements = [];
+      try {
+        await page.evaluate(() => document.fonts.ready);
+        const controls = await page
+          .locator(".globe-tools button")
+          .evaluateAll((buttons) =>
+            buttons.map((button) => {
+              const rect = button.getBoundingClientRect();
+              return {
+                id: button.id,
+                fits:
+                  rect.left >= 0 &&
+                  rect.right <= innerWidth &&
+                  rect.top >= 0 &&
+                  rect.bottom <= innerHeight,
+                reachable: button.contains(
+                  document.elementFromPoint(
+                    rect.x + rect.width / 2,
+                    rect.y + rect.height / 2,
+                  ),
+                ),
+              };
+            }),
+          );
+        assert.ok(
+          controls.every(({ fits, reachable }) => fits && reachable),
+          JSON.stringify(controls),
+        );
+        // Off-screen content and chapter transitions can widen the document too.
+        const positions = await page.evaluate(() => [
+          { name: "top", y: 0 },
+          ...Array.from(
+            document.querySelectorAll(".chapter, main > section, .footer"),
+            (element) => ({
+              name: element.id || element.className,
+              y: element.getBoundingClientRect().top + scrollY,
+            }),
+          ),
+        ]);
+        for (const { name, y } of positions) {
+          await page.evaluate(
+            (top) => window.scrollTo({ top, behavior: "instant" }),
+            y,
+          );
+          await page.waitForTimeout(180);
+          const measured = await page.evaluate(() => ({
+            width: innerWidth,
+            scrollWidth: document.documentElement.scrollWidth,
+          }));
+          measurements.push({ position: name, ...measured });
+          assert.ok(
+            measured.scrollWidth <= measured.width,
+            JSON.stringify({ position: name, ...measured }),
+          );
+        }
+        await page.screenshot({
+          path: path.join(evidence, `responsive-${width}.png`),
+          fullPage: true,
+        });
+        return measurements;
+      } finally {
+        await page.context().close();
+      }
     });
   await check(
     "Compact mobile transaction rows fit their container",

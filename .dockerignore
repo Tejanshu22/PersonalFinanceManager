@@ -1,4 +1,4 @@
-.git
+**/.git
 **/node_modules
 **/.next
 **/.venv
@@ -6,8 +6,14 @@
 **/.pytest_cache
 **/test-results
 **/playwright-report
-.env
-.env.*
+# No environment files are needed in either image, including example templates.
+# Keep the reviewed root .env.example in Git, outside the Docker build context.
+**/.env
+**/.env.*
+**/*.tsbuildinfo
+**/*.pem
+**/*.key
+**/secret*.json
 private
 tmp
 docs/design/day05/reference
