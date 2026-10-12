@@ -1,0 +1,9 @@
+
+{
+  "name": "finnest-website",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "py -m http.server 8000"
+  }
+}

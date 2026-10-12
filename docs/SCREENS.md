@@ -84,6 +84,8 @@ The materials are sufficient to begin Day 5 design after founder review; public 
 
 ## DAY-005 approved V4 creative direction — 2026-10-12
 
+**Later DAY-006 status:** [component integration](DAY_06_FOUNDATION.md) now exists in `frontend/`; the artifact-only statements below describe the Day 5 snapshot. The original archive is preserved. The interactive sample is available in the Next.js route, while uploads, real accounts, waitlist, tax preparation and CA sharing remain planned.
+
 The founder approved the Interactive Globe V4 visual/interaction direction. The [design handoff](design/day05/README.md) preserves the supplied executable HTML/screenshots and specifies maintainable components, state transitions, exact fictional financial expectations and remaining defects. “Your money. In perspective.” is approved reference hero copy; central configurable branding/tagline is unchanged. This does not resolve all Day 4 pricing, brand-clearance or commercial decisions.
 
 The repository still has no application scaffold; DAY-006 owns that work. Following the founder's explicit fallback instruction, Day 5 produces implementation-ready design artifacts, **not integrated Next.js components**. The available local prototype journey is hero → optional globe exploration → labeled money routes → Sample Data workspace → reversible fictional credit correction → limitations. The complete future upload/reconciliation/tax/CA journey above remains planned.

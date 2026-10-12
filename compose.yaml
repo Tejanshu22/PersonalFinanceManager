@@ -1,0 +1,38 @@
+name: personal-finance-local
+services:
+  db:
+    image: postgres:17-alpine
+    environment:
+      POSTGRES_USER: local_app
+      POSTGRES_PASSWORD: ${LOCAL_DB_PASSWORD:?Set a disposable local-only password in .env}
+      POSTGRES_DB: finance_synthetic
+    volumes:
+      - synthetic-db:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U local_app -d finance_synthetic"]
+      interval: 5s
+      timeout: 3s
+      retries: 12
+    # No host database port. Only the local application network can connect.
+  api:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+    environment:
+      DATABASE_URL: postgresql://local_app:${LOCAL_DB_PASSWORD}@db:5432/finance_synthetic
+    ports: ["127.0.0.1:8001:8001"]
+    depends_on:
+      db:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8001/health/ready', timeout=4)"]
+      interval: 10s
+      timeout: 5s
+      retries: 6
+  frontend:
+    build:
+      context: .
+      dockerfile: frontend/Dockerfile
+    ports: ["127.0.0.1:3000:3000"]
+volumes:
+  synthetic-db:

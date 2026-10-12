@@ -74,4 +74,6 @@ The official [MeitY DPDP Rules 2025 publication page](https://www.meity.gov.in/d
 
 ## Repository boundary
 
+DAY-006's [foundation](DAY_06_FOUNDATION.md) exposes a synthetic frontend and operational API probes only. Optional rounded globe location stays in browser memory and can be cleared during a pending request; tests mock it. No financial upload/account/payment/tax/sharing routes exist. Compose binds frontend/API to loopback and publishes no database port; the ignored disposable local password is not a production secret. Health failures return sanitized status, and public API documentation is disabled. These limited measures do not satisfy the real-data gate, isolation, authentication or independent-review requirements above. Development lint dependencies have unresolved audit findings recorded in the foundation report; public release is not approved.
+
 Preserve private development settings where configured; do not infer remote visibility. Do not run unreviewed PR code with write credentials. Stable identifiers, generated-document ownership and human acceptance rules are documented in [GitHub automation](GITHUB_AUTOMATION.md). No tracking percentage proves security readiness.

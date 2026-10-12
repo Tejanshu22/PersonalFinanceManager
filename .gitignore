@@ -13,3 +13,8 @@ private/
 *.key
 secret*.json
 /tmp/
+.venv/
+.next/
+*.tsbuildinfo
+playwright-report/
+test-results/

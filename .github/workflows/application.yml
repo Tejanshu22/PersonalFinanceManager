@@ -1,0 +1,78 @@
+name: Application foundation checks
+on:
+  push:
+    branches: [master]
+  pull_request:
+permissions:
+  contents: read
+env:
+  NEXT_TELEMETRY_DISABLED: '1'
+jobs:
+  frontend:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: frontend
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+          cache-dependency-path: frontend/package-lock.json
+      - run: npm ci
+      - run: npm run lint
+      - run: npm run typecheck
+      - run: npm test
+      - run: npm run build
+      - run: npx playwright install --with-deps chromium
+      - name: Production browser regression suite
+        run: |
+          npm run start > /tmp/finance-frontend.log 2>&1 &
+          SERVER_PID=$!
+          trap 'kill "$SERVER_PID"' EXIT
+          for attempt in $(seq 1 30); do
+            if curl --fail --silent http://127.0.0.1:3000/ > /dev/null; then break; fi
+            sleep 1
+          done
+          npm run test:browser
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: synthetic-browser-evidence
+          path: frontend/test-results/
+  backend:
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: postgres:17-alpine
+        env:
+          POSTGRES_USER: local_app
+          POSTGRES_PASSWORD: ci_synthetic_only
+          POSTGRES_DB: finance_synthetic
+        ports: ['5432:5432']
+        options: >-
+          --health-cmd "pg_isready -U local_app -d finance_synthetic"
+          --health-interval 5s --health-timeout 3s --health-retries 12
+    defaults:
+      run:
+        working-directory: backend
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - run: python -m pip install -r requirements.txt
+      - run: python -m pytest -q
+      - name: Probe actual PostgreSQL
+        env:
+          DATABASE_URL: postgresql://local_app:ci_synthetic_only@127.0.0.1:5432/finance_synthetic
+        run: python -c "from app.main import ready; assert ready() == {'status':'ready'}"
+      - name: Repository documentation and Compose checks
+        working-directory: .
+        env:
+          LOCAL_DB_PASSWORD: ci_synthetic_only
+        run: |
+          python scripts/check_docs.py
+          docker compose config --quiet
+          git diff --check

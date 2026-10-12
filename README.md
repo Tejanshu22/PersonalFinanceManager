@@ -6,7 +6,7 @@
 **Updating an existing repository:** [docs/UPDATE_EXISTING_REPO.md](docs/UPDATE_EXISTING_REPO.md)  
 **Day 1 kickoff:** [docs/DAY_01_KICKOFF.md](docs/DAY_01_KICKOFF.md)
 
-> **Status: planning foundation; no application implementation.** Local history and generated issue links show tracking sync activity. Live GitHub status still requires verification. The [DAY-001 draft](docs/DAY_01_KICKOFF.md) awaits owner acceptance.
+> **Status: internal technical foundation, awaiting review.** DAY-006 adds a real Next.js V4 sample frontend, FastAPI health probes and synthetic PostgreSQL local staging. Live financial features are not implemented. See [startup commands, actual evidence and limitations](docs/DAY_06_FOUNDATION.md). Generated progress and remote issue acceptance remain separate.
 
 **Mission:** Help Indian professionals organize uploaded financial statements, understand cash flow, prepare tax documents, and securely share limited information with a CA. AI explains calculations; it does not invent financial figures.
 
@@ -49,7 +49,7 @@ The approved Day 1 scope defers FIN-027, FIN-063, FIN-066 and FIN-067 to V1.5. T
 
 ## Rebranding
 
-The founder-approved [Day 5 Interactive Globe V4 design handoff](docs/design/day05/README.md) includes a locally runnable reference, component contracts and independent validation. It is a design artifact for the planned Day 6 scaffold, not an implemented production frontend or working waitlist.
+The founder-approved [Day 5 Interactive Globe V4 design handoff](docs/design/day05/README.md) remains an unchanged reference. Its [Day 6 integration](docs/DAY_06_FOUNDATION.md) now runs in the Next.js frontend; the original Python-server npm shortcut is preserved. A live waitlist remains unimplemented.
 
 Working name is configurable. Brand clearance is **not** complete: do trademark, domain, app store and market checks before public branding.
 

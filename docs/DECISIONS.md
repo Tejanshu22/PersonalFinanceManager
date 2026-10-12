@@ -173,6 +173,8 @@ No change to the 194 feature IDs, 140 V1 scope, releases, manifests, branding co
 
 ## DAY-005 Interactive Globe V4 — 2026-10-12
 
+Subsequent implementation status is recorded in the DAY-006 entry below; the Day 5 artifact-only statements retain their historical meaning.
+
 The founder explicitly approved V4 as the final creative direction and authorized integration only where current architecture/Day 5 scope permits, with an implementation-ready artifact fallback for a documentation-only repository. The clean `master` checkout has no application frontend; DAY-006 explicitly owns scaffolding. Therefore the [Day 5 package](design/day05/README.md) archives the nine supplied files unchanged and adds component contracts, a synthetic financial fixture and independent prototype evidence. It does not paste a monolith into a new app or claim built production components. Attachment instructions do not authorize commits, pushes or completion.
 
 | Ref | Decision / status | Remaining evidence or approval |
@@ -184,3 +186,17 @@ The founder explicitly approved V4 as the final creative direction and authorize
 | D5-05 | **Pending:** component/public-release review, geography asset provenance and provisional brand clearance | V4 approval does not approve public deployment, professional/security claims, a rename, V1/pricing changes or previous external-review decisions |
 
 No application implementation, source-manifest/generated-progress edit, GitHub issue mutation, commit, push or verified label is part of this task. Independent evidence tests only the preserved prototype and authored specification. DAY-005 remains awaiting human artifact review and the repository completion gate; no change to the 85-day roadmap, Day 60/85 targets or 194 feature identifiers.
+
+## DAY-006 foundation execution — 2026-10-12
+
+The founder authorized the actual manifest task, “Scaffold Next.js, FastAPI, PostgreSQL, CI and local staging,” with preservation of V4 and the existing npm/Python shortcut. The [foundation report](DAY_06_FOUNDATION.md) records the starting audit, implementation, validation and outstanding gates. No roadmap or release source was changed.
+
+| Ref | Decision / status | Boundary |
+| --- | --- | --- |
+| D6-01 | Applied: dedicated frontend/ and backend/ with PostgreSQL Compose; no root workspace conversion | Existing tracker package, root lockfile and prototype shortcut preserved; no microservices or vendor deployment |
+| D6-02 | Applied: V4 React sections with scoped JavaScript canvas adapter, exact Decimal sample selectors and central branding | Internal synthetic experience; full renderer typing/device/accessibility review remain follow-ups |
+| D6-03 | Applied: health/readiness-only API and read-only application CI alongside tracker CI | Ledger/migrations are DAY-007; authentication DAY-008. Branch protection and remote CI acceptance are not proven locally |
+| D6-04 | Pending review: accept Day 6 evidence and remaining development-tool advisories | No public launch or real data; resolve compatible lint-chain updates, public asset/brand review and production hardening separately |
+| D6-05 | Remote issue lookup blocked by TLS timeout; number/existence unconfirmed | Successful lookup required before proposing a new issue; no creation, closure, verification, commit or push performed |
+
+Related FIN-005/006/127/128/129 are not marked complete. FIN-006 still needs a reviewed live waitlist. No financial document upload, payment, tax computation or CA-sharing implementation was added. An ignored disposable local password belongs only to synthetic staging; it is never a production credential. Day 60/85 remain conditional targets and all 194 feature IDs / 85 daily IDs remain unchanged.

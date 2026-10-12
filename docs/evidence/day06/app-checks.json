@@ -1,0 +1,178 @@
+{
+  "date": "2026-10-12T04:28:32.543Z",
+  "target": "DAY-006 Next.js production build; synthetic data and mocked location",
+  "browser": "Installed chrome headless via Playwright",
+  "location": "Mock callbacks only; no genuine location accessed",
+  "results": [
+    {
+      "name": "No automatic location request",
+      "status": "pass"
+    },
+    {
+      "name": "Automatic rotation changes marker projection",
+      "status": "pass"
+    },
+    {
+      "name": "Pause stops marker rotation",
+      "status": "pass"
+    },
+    {
+      "name": "Marker hover exposes explanatory tooltip",
+      "status": "pass"
+    },
+    {
+      "name": "Desktop dragging changes globe projection",
+      "status": "pass"
+    },
+    {
+      "name": "Zoom changes rendered globe radius; reset restores it",
+      "status": "pass"
+    },
+    {
+      "name": "Four chapters keep canvas anchored; stage fades at exit",
+      "status": "pass",
+      "detail": {
+        "samples": [
+          {
+            "scrollY": 0,
+            "canvasY": 0,
+            "chapter": "01"
+          },
+          {
+            "scrollY": 750,
+            "canvasY": 0,
+            "chapter": "02"
+          },
+          {
+            "scrollY": 1450,
+            "canvasY": 0,
+            "chapter": "03"
+          },
+          {
+            "scrollY": 2200,
+            "canvasY": 0,
+            "chapter": "04"
+          },
+          {
+            "scrollY": 2750,
+            "canvasY": 0,
+            "chapter": "04"
+          }
+        ],
+        "exitOpacity": 0.30303
+      }
+    },
+    {
+      "name": "Scrolling forward and backward does not rotate paused globe",
+      "status": "pass"
+    },
+    {
+      "name": "All five financial categories select corresponding path",
+      "status": "pass"
+    },
+    {
+      "name": "Fictional credit classifications match declared totals and undo",
+      "status": "pass"
+    },
+    {
+      "name": "Mock location grant rounds display; clear removes marker",
+      "status": "pass"
+    },
+    {
+      "name": "Mock location deny",
+      "status": "pass"
+    },
+    {
+      "name": "Mock location timeout",
+      "status": "pass"
+    },
+    {
+      "name": "Mock location unavailable",
+      "status": "pass"
+    },
+    {
+      "name": "Mock location missing",
+      "status": "pass"
+    },
+    {
+      "name": "Mock location insecure",
+      "status": "pass"
+    },
+    {
+      "name": "Mobile location control clickable without forced click",
+      "status": "pass"
+    },
+    {
+      "name": "Mobile menu toggles and demo CTA navigates",
+      "status": "pass"
+    },
+    {
+      "name": "Touch pointer drag changes projection (synthetic events)",
+      "status": "pass"
+    },
+    {
+      "name": "No horizontal overflow 1440x900",
+      "status": "pass",
+      "detail": {
+        "width": 1440,
+        "scrollWidth": 1440
+      }
+    },
+    {
+      "name": "No horizontal overflow 768x1024",
+      "status": "pass",
+      "detail": {
+        "width": 768,
+        "scrollWidth": 768
+      }
+    },
+    {
+      "name": "No horizontal overflow 390x844",
+      "status": "pass",
+      "detail": {
+        "width": 390,
+        "scrollWidth": 390
+      }
+    },
+    {
+      "name": "No horizontal overflow 320x568",
+      "status": "pass",
+      "detail": {
+        "width": 320,
+        "scrollWidth": 320
+      }
+    },
+    {
+      "name": "Compact mobile transaction rows fit their container",
+      "status": "pass"
+    },
+    {
+      "name": "Keyboard focus and globe arrow controls",
+      "status": "pass"
+    },
+    {
+      "name": "Reduced motion disables initial automatic rotation",
+      "status": "pass"
+    },
+    {
+      "name": "Reduced motion removes all decorative canvas animation",
+      "status": "pass"
+    },
+    {
+      "name": "Clear invalidates a pending mocked location callback",
+      "status": "pass"
+    },
+    {
+      "name": "Runtime motion preference freezes canvas and disables automatic playback",
+      "status": "pass"
+    },
+    {
+      "name": "Mobile menu Escape restores focus and label",
+      "status": "pass"
+    },
+    {
+      "name": "No page errors or third-party requests",
+      "status": "pass"
+    }
+  ]
+}

@@ -1,6 +1,8 @@
-# FINNest — proposed architecture (not implemented)
+# FINNest — architecture and foundation status
 
 **DAY-001 review draft · 2026-10-10.** This describes requirements and dependencies, not deployed components. [Decisions](DECISIONS.md) separates approved boundaries from unresolved choices.
+
+**DAY-006 update · 2026-10-12:** the [local foundation](DAY_06_FOUNDATION.md) now implements Next.js App Router/TypeScript UI sections, a bounded canvas adapter, exact synthetic selectors, a FastAPI monolith entry point with health probes and PostgreSQL/Compose staging. The remaining domain architecture below is still proposed. No ledger schema, migrations, authentication, upload/storage pipeline or production deployment is claimed. Browser sample data has no API dependency; local readiness exercises the API-to-PostgreSQL boundary. Branding is loaded by the server shell from central config. New application CI is separate from the unchanged tracker workflow.
 
 ## Shape and trust boundaries
 

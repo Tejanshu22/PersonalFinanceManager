@@ -63,4 +63,6 @@ The Day 75 target depends on reviewer availability and remediation. If a gate fa
 
 ## DAY-001 is a separate acceptance gate
 
+DAY-006's [local scaffold evidence](DAY_06_FOUNDATION.md) is also a separate review artifact. A passing synthetic UI/build/health check is not release approval. Waitlist, actual ledger/migrations/authentication, independent privacy/security/tax reviews and production operations remain subject to the gates above. Confirm the DAY-006 issue through a successful lookup, review the diff and remote CI, and obtain explicit human acceptance before verification. No completion checkbox is changed here.
+
 This documentation draft does not satisfy product release gates or mark Day 1 complete. DAY-001 requires human review of its [deliverables](DAY_01_KICKOFF.md), reviewed/merged PR and passing CI per [AGENTS.md](../AGENTS.md), plus explicit owner authorization before Issue #1 is labeled verified and closed. No automated closure or verification is authorized.
