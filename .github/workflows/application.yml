@@ -104,3 +104,13 @@ jobs:
         with:
           name: container-security-evidence
           path: tmp/day06-container-security.json
+  ledger-postgres:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - name: Fresh isolated PostgreSQL migrations and ledger tests
+        run: docker compose -p finnest-ledger-tests -f backend/compose.ledger-tests.yaml up --build --abort-on-container-exit --exit-code-from tests
+      - name: Remove only disposable ledger-test services
+        if: always()
+        run: docker compose -p finnest-ledger-tests -f backend/compose.ledger-tests.yaml down -v

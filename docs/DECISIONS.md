@@ -27,14 +27,14 @@ Approval sources: the owner's “Day 1: Approved with Amendments” and subseque
 
 ## Unresolved decisions — separate from approvals
 
-Proposed owners are roles to appoint, not completed assignments. All items below are pending.
+Proposed owners are roles to appoint, not completed assignments. Items remain pending except where an explicit limited approval is recorded below.
 
 | ID | Decision needed | Proposed owner / timing | Draft recommendation or dependency |
 | --- | --- | --- | --- |
 | O-01 | Accept the full Day 1 requirements and 14-journey thresholds | Product owner; DAY-001 review | Review financial definitions, corpus minimums and performance/recovery targets; no results implied |
 | O-02 | Approve concrete day-to-feature mapping and roadmap wording | Product owner; subsequent scoped change | Feature deferrals are reconciled under D-07; day allocation, milestone wording and any priority changes remain pending |
 | O-03 | Select bank/card format versions and support limits | Product owner + technical lead; after safe fixtures | Consider actual interview needs and fixture coverage; no provider chosen |
-| O-04 | Approve INR-only initial boundary, posted-date reporting, cross-period refund treatment, savings label and rounding/precision | Product owner + financial reviewer; before schema/analytics | Draft semantics are in REQUIREMENTS; unresolved legal/tax questions go to qualified reviewer |
+| O-04 | INR-only boundary, posted-date reporting, refund treatment, derived metric and rounding/precision | Founder-approved for synthetic implementation; financial review remains outstanding | **Approved for synthetic Day 7 development** by the founder's “O-04 Approval and Ledger Implementation” instruction, recorded 2026-10-13. [Implementation and evidence](DAY_07_LEDGER.md): exact positive amounts <10^18 rupees, debit/credit, strict nonzero sub-paise/float rejection, posted dates with original dates retained, consumption refunds in their posting period, separate transfers/repayments/investments/unknowns, and “observed income less net consumption” withheld under incomplete coverage. No professional, legal, privacy, security or real-data release approval implied |
 | O-05 | Appoint tax, privacy/legal and independent security reviewers, budget and review slots | Product owner; begin Days 2–5 | External review and remediation must precede corresponding release gates |
 | O-06 | Approve retention/purge durations, backup window, research-note policy and justified legal exceptions | Owner + legal/privacy reviewer; before collection | No indefinite default; demonstrate restore cannot resurrect deleted access |
 | O-07 | Approve auth/hosting/storage/model/payment providers, regions and spending limits | Owner + technical lead + privacy reviewer; before integrations | Processor terms and merchant approval are dependencies |
