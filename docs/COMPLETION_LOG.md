@@ -4,6 +4,7 @@
 
 | ID | Work item | Verified/closed UTC | Issue |
 | --- | --- | --- | --- |
+| FIN-007 | Product acceptance criteria | 2026-10-17T06:33:22Z | [View](https://github.com/Tejanshu22/PersonalFinanceManager/issues/8) |
 | FIN-006 | Landing page and waitlist | 2026-10-12T08:40:09Z | [View](https://github.com/Tejanshu22/PersonalFinanceManager/issues/7) |
 | FIN-005 | Brand configuration and rename policy | 2026-10-11T21:53:06Z | [View](https://github.com/Tejanshu22/PersonalFinanceManager/issues/6) |
 | DAY-004 | Analyze competitors, pricing, compliance risks and name conflicts | 2026-10-11T16:53:37Z | [View](https://github.com/Tejanshu22/PersonalFinanceManager/issues/12) |

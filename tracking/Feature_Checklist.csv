@@ -5,7 +5,7 @@
 ☐,FIN-004,V1,Discovery & product,Competitor and pricing research,P0,1,Planned,Comparison and tested price hypotheses recorded,Unassigned,https://github.com/Tejanshu22/PersonalFinanceManager/issues/5
 ☑,FIN-005,V1,Discovery & product,Brand configuration and rename policy,P0,1,Verified Done,Display name comes only from config and rebrand guide exists,Unassigned,https://github.com/Tejanshu22/PersonalFinanceManager/issues/6
 ☑,FIN-006,V1,Discovery & product,Landing page and waitlist,P0,1,Verified Done,Privacy-conscious waitlist and signup flow works,Unassigned,https://github.com/Tejanshu22/PersonalFinanceManager/issues/7
-☐,FIN-007,V1,Discovery & product,Product acceptance criteria,P0,1,Planned,V1 functions have explicit pass/fail conditions,Unassigned,https://github.com/Tejanshu22/PersonalFinanceManager/issues/8
+☑,FIN-007,V1,Discovery & product,Product acceptance criteria,P0,1,Verified Done,V1 functions have explicit pass/fail conditions,Unassigned,https://github.com/Tejanshu22/PersonalFinanceManager/issues/8
 ☐,FIN-008,V1,Discovery & product,Risk register and decision log,P0,1,Planned,Major assumptions and risks have owners and follow-ups,Unassigned,https://github.com/Tejanshu22/PersonalFinanceManager/issues/9
 ☐,FIN-009,V1,Identity & onboarding,Secure sign-up and login,P0,8,Planned,"Signup, login and logout tested end to end",Unassigned,
 ☐,FIN-010,V1,Identity & onboarding,Verified email onboarding,P0,8,Planned,User email verification works,Unassigned,
