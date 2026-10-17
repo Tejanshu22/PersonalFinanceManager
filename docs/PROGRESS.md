@@ -2,7 +2,7 @@
 
 > AUTO-GENERATED from `data/features.json`, `data/daily_plan.json` and GitHub Issues. Do not hand-edit this file.
 
-**Synced:** 2026-10-12 08:40 UTC  
+**Synced:** 2026-10-17 06:33 UTC  
 **Verified features:** 2/194 (1.0%)  
 **V1 verified:** 2/140 (1.4%)  
 **Verified daily tasks:** 4/85
