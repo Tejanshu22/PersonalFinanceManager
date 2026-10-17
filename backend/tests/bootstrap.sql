@@ -1,0 +1,2 @@
+COMMENT ON DATABASE finnest_ledger_test IS 'DISPOSABLE_SYNTHETIC_DAY007';
+CREATE ROLE ledger_test_writer NOLOGIN;

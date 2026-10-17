@@ -1,0 +1,26 @@
+name: finnest-ledger-tests
+services:
+  ledger-test-db:
+    image: postgres:17-alpine
+    environment:
+      POSTGRES_USER: ledger_test_owner
+      POSTGRES_PASSWORD: day007_synthetic_only
+      POSTGRES_DB: finnest_ledger_test
+    volumes:
+      - ./tests/bootstrap.sql:/docker-entrypoint-initdb.d/001-marker.sql:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ledger_test_owner -d finnest_ledger_test"]
+      interval: 2s
+      timeout: 3s
+      retries: 30
+    # Dedicated disposable network/database. No host ports; no staging volume.
+  tests:
+    build:
+      context: ..
+      dockerfile: backend/tests/Dockerfile
+    environment:
+      TEST_DATABASE_URL: postgresql+psycopg://ledger_test_owner:day007_synthetic_only@ledger-test-db:5432/finnest_ledger_test
+      LEDGER_TEST_DATABASE_ACK: DISPOSABLE_SYNTHETIC_DAY007
+    depends_on:
+      ledger-test-db:
+        condition: service_healthy

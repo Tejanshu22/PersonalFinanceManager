@@ -6,6 +6,8 @@
 
 ## Shape and trust boundaries
 
+**DAY-007 implementation · 2026-10-13:** [ledger implementation and evidence](DAY_07_LEDGER.md) records eight owner-scoped PostgreSQL tables, an environment-configured Alembic migration, SQLAlchemy Core/psycopg repository, strict Decimal validation, immutable provenance, append-only corrections, concurrency-guarded relationships and coverage-qualified aggregates. O-04 is founder-approved for synthetic development; independent professional/security review remains pending. The migration has run only in a guarded disposable test database. The health-only API, ordinary staging database and fictional UI remain unchanged; no production identity or financial API is implied.
+
 Retain the proposed responsive Next.js/TypeScript frontend, FastAPI/Pydantic modular monolith, PostgreSQL exact numeric storage, private S3-compatible objects and isolated background workers. Redis/queue technology is needed only where justified by reliable job execution; do not introduce microservices or additional infrastructure without evidence.
 
 ```text
@@ -31,7 +33,7 @@ Ownership checks occur in the API and workers; neither model-generated arguments
 
 - Preserve immutable source values, document hash/provenance, parser version, period, currency, import identity and extraction location. Corrections are additional auditable records; immutability is not a reason to retain data forever after an approved deletion request.
 - Separate cash accounts and credit-card liability activity. Model matched transfers/refunds/repayments as relationships between preserved rows. Keep unknown categories and missing counterparts explicit.
-- Use exact numeric database columns and decimal arithmetic end to end; API money values must avoid binary floating-point conversion. Precision/rounding and canonical signed-amount/date conventions require approval before migrations.
+- Use exact numeric database columns and decimal arithmetic end to end; future API money values must avoid binary floating-point conversion. O-04 now approves positive INR magnitude with debit/credit, strict paise validation and posted dates for synthetic implementation; its limits and external-review boundary are in the Day 7 report.
 - Import states distinguish quarantined, processing, awaiting review, finalized, partial, rejected and failed. Retry with stable job/import identity and transactional finalization; no duplicate ledger writes. User acknowledgment cannot erase a reconciliation failure.
 - Analytics use versioned deterministic functions and explicit account/period coverage. Report snapshots pin input/correction/calculation versions; new corrections create a new report version. Tax-ready exports include unresolved issues and applicable metadata rather than pretending full financial coverage.
 - AI receives minimal approved structured results and opaque citation identifiers; owner-scoped UI drill-down resolves references. No unrestricted SQL, full financial-document retrieval, untrusted narration in prompts or autonomous mutation of financial records.
